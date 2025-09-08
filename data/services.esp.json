@@ -1,0 +1,7 @@
+[
+    { "img": "/dark/assets/imgs/serv-icons/1.svg", "title": "Branding & Identidad", "desc": "Logos, paletas, manuales y sistemas de identidad que destacan.", "link": "/dark/home/works" },
+    { "img": "/dark/assets/imgs/serv-icons/2.svg", "title": "Diseño Web", "desc": "Sitios modernos, veloces y accesibles con micro-interacciones.", "link": "/dark/home/works" },
+    { "img": "/dark/assets/imgs/serv-icons/3.svg", "title": "Desarrollo Web", "desc": "Next.js, WordPress/Elementor y Lovable para velocidad con calidad.", "link": "/dark/home/works" },
+    { "img": "/dark/assets/imgs/serv-icons/4.svg", "title": "Product Design", "desc": "UX/UI para apps y webapps orientado a investigación y negocio.", "link": "/dark/home/works" }
+  ]
+  
