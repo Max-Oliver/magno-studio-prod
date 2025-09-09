@@ -22,6 +22,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 import Lines from '@/components/dark/common/Lines';
 import ProgressScroll from '@/components/dark/common/ProgressScroll';

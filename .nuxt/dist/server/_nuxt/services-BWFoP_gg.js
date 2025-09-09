@@ -1,0 +1,30 @@
+const data = [
+  {
+    title: "Digital Product Design",
+    img: "/light/assets/imgs/serv-icons/3.png",
+    desc: "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    link: "/light/page-services-details"
+  },
+  {
+    title: "Web Developments",
+    img: "/light/assets/imgs/serv-icons/4.png",
+    desc: "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    link: "/light/page-services-details"
+  },
+  {
+    title: "Branding Design",
+    img: "/light/assets/imgs/serv-icons/5.png",
+    desc: "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    link: "/light/page-services-details"
+  },
+  {
+    title: "UI-UX Design",
+    img: "/light/assets/imgs/serv-icons/5.png",
+    desc: "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+    link: "/light/page-services-details"
+  }
+];
+export {
+  data as d
+};
+//# sourceMappingURL=services-BWFoP_gg.js.map
