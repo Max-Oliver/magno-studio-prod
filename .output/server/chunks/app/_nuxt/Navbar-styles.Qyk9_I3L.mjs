@@ -1,6 +1,0 @@
-const Navbar_vue_vue_type_style_index_0_scoped_e0b23d16_lang = ".lang-toggle[data-v-e0b23d16]{--size:48px;align-items:center;background:transparent;border:1px solid transparent;border-radius:999px;box-sizing:border-box;color:#fff;cursor:pointer;display:inline-flex;font-weight:600;gap:6px;height:var(--size);justify-content:center;line-height:1;padding:0;width:52px}";
-
-const NavbarStyles_Qyk9_I3L = [Navbar_vue_vue_type_style_index_0_scoped_e0b23d16_lang];
-
-export { NavbarStyles_Qyk9_I3L as default };
-//# sourceMappingURL=Navbar-styles.Qyk9_I3L.mjs.map

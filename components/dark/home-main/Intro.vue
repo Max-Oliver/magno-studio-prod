@@ -19,14 +19,16 @@
                 <span class="up-text">
                   {{ t('intro.headline_3') }}
                   <span class="underline">
-                    <a href="/dark/home/contact" class="main-color">{{ t('intro.headline_cta') }}</a>
+                    <a href="/home/contact" class="main-color">{{ t('intro.headline_cta') }}</a>
                   </span>
                 </span>
               </span>
             </h4>
             <div class="exp mt-80 md-mb15">
-              <h2 class="fz-70 numb-font">
-                {{ t('intro.years_amount') }}
+              <h2 class="">
+                <span class="fz-70 numb-font main-color">
+                  {{ t('intro.years_amount') }}
+                </span>
                 <span class="sub-title main-font opacity-7 ml-15">
                   {{ t('intro.years_label') }}
                 </span>
@@ -72,5 +74,5 @@ import { useI18n } from '@/i18n';
 const { t } = useI18n();
 
 const headline = computed(() => t('intro.headline') as string[]);
-const marquee  = computed(() => t('intro.marquee') as string[]);
+const marquee = computed(() => t('intro.marquee') as string[]);
 </script>

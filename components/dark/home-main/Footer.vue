@@ -6,7 +6,7 @@
       <div class="footer__cta">
         <h2 id="footer-heading" class="footer__title">
           <a href="/home/contact" class="footer__titleLink">
-            <span>Let’s Contact </span>
+            <span>{{ t('footer.cta_title') }}</span>
             <span class="ml-30 fz-70 ti-arrow-top-right"></span>
           </a>
         </h2>
@@ -18,29 +18,31 @@
         </div>
 
         <div>
-          <h6 class="footer__label">Address</h6>
+          <h6 class="footer__label">{{ t('footer.address_label') }}</h6>
           <address class="footer__address">
-            Miami Boulevard 2<br />Punta del Este, Uruguay
+            {{ t('footer.address_line1') }}<br />{{ t('footer.address_line2') }}
           </address>
         </div>
 
-        <nav aria-label="Primary">
+        <nav :aria-label="t('footer.aria_primary')">
           <ul class="menu-col">
-            <li><a class="u-underline is-active" href="/">Home</a></li>
-            <li><a class="u-underline" href="/home/works">Work</a></li>
-            <li><a class="u-underline" href="/home/contact">Contact Us</a></li>
+            <li><a class="u-underline is-active" href="/">{{ t('links.home') }}</a></li>
+            <li><a class="u-underline" href="/home/works">{{ t('links.work') }}</a></li>
+            <li><a class="u-underline" href="/home/contact">{{ t('links.contact') }}</a></li>
           </ul>
         </nav>
 
-        <nav aria-label="Social">
+        <nav :aria-label="t('footer.aria_social')">
           <ul class="menu-col">
             <li>
-              <a class="u-underline" href="https://instagram.com/magnocreative" target="_blank"
-                rel="noreferrer">Instagram</a>
+              <a class="u-underline" href="https://instagram.com/magnocreative" target="_blank" rel="noreferrer">
+                {{ t('social.instagram') }}
+              </a>
             </li>
             <li>
-              <a class="u-underline" href="https://behance.net/magnocreative" target="_blank"
-                rel="noreferrer">Behance</a>
+              <a class="u-underline" href="https://behance.net/magnocreative" target="_blank" rel="noreferrer">
+                {{ t('social.behance') }}
+              </a>
             </li>
           </ul>
         </nav>
@@ -51,6 +53,10 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue';
+import { useI18n } from '@/i18n';
+
+const { t } = useI18n();
+
 onMounted(() => {
   // Si querés setear el bg desde data-attribute:
   const el = document.querySelector<HTMLElement>('.footer');

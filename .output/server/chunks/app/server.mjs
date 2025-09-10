@@ -629,7 +629,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/contact-7glTYtAa.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/contact-7k6RtP-H.mjs').then((m) => m.default || m)
   },
   {
     name: "home-works",
@@ -637,7 +637,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/works-D9alDr2R.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/works-C2JAyXqj.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -645,775 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/index-C8Np9wf0.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-about",
-    path: "/old/dark/about",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/about-BHqK9ZIM.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-blog-classic",
-    path: "/old/dark/blog-classic",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/blog-classic-Ce76_drX.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-blog-details",
-    path: "/old/dark/blog-details",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/blog-details-DiuCW3xM.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-blog-list",
-    path: "/old/dark/blog-list",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/blog-list-D7ZA5I7J.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-blog-list2",
-    path: "/old/dark/blog-list2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/blog-list2-CNuWM4qh.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-asymmetric-portfolio",
-    path: "/old/dark/home-asymmetric-portfolio",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-asymmetric-portfolio-Z9sPlLw_.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-creative-agency",
-    path: "/old/dark/home-creative-agency",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-creative-agency-A0AlVhAV.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-creative-portfolio",
-    path: "/old/dark/home-creative-portfolio",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-creative-portfolio-DVALITZb.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-digital-agency",
-    path: "/old/dark/home-digital-agency",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-digital-agency-BmKMt-jd.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-freelancer",
-    path: "/old/dark/home-freelancer",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-freelancer-DE107c8B.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-main",
-    path: "/old/dark/home-main",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-main-CQtLzY1E.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-minimal-portfolio",
-    path: "/old/dark/home-minimal-portfolio",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-minimal-portfolio-BvijOkng.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-modern-agency",
-    path: "/old/dark/home-modern-agency",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-modern-agency-Bj1XsN24.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-personal-vcard",
-    path: "/old/dark/home-personal-vcard",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-personal-vcard-D2hFNRLs.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-home-startup-onepage",
-    path: "/old/dark/home-startup-onepage",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-startup-onepage-CkJfVNvb.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-about",
-    path: "/old/dark/page-about",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-about-HjODuQY8.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-about2",
-    path: "/old/dark/page-about2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-about2-DsfI7avr.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-about3",
-    path: "/old/dark/page-about3",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-about3-tBGa42-z.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-contact",
-    path: "/old/dark/page-contact",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-contact-C9qyhmzx.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-contact2",
-    path: "/old/dark/page-contact2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-contact2-CWzj8EoM.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-contact3",
-    path: "/old/dark/page-contact3",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-contact3-6QCrxCkM.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-error404",
-    path: "/old/dark/page-error404",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-error404-CvDiwWUz.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-FAQS",
-    path: "/old/dark/page-FAQS",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-FAQS-B5B8krSl.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-services-details",
-    path: "/old/dark/page-services-details",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-services-details-KMn-LoCS.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-services",
-    path: "/old/dark/page-services",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-services-SrcvfY1i.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-services2",
-    path: "/old/dark/page-services2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-services2-DiYHYWgT.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-team-single",
-    path: "/old/dark/page-team-single",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-team-single-D8Ga6sLu.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-page-team",
-    path: "/old/dark/page-team",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-team-RO0nOaze.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-portfolio-caption-cursor",
-    path: "/old/dark/portfolio-caption-cursor",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-caption-cursor-HK6enMD-.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-portfolio-gallery",
-    path: "/old/dark/portfolio-gallery",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-gallery-C1Ty0VXO.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-portfolio-masonry",
-    path: "/old/dark/portfolio-masonry",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-masonry-umoblbAi.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-portfolio-metro",
-    path: "/old/dark/portfolio-metro",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-metro-DbcBRzQ1.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-portfolio-outline",
-    path: "/old/dark/portfolio-outline",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-outline-C9RjnFWs.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-portfolio-parallax",
-    path: "/old/dark/portfolio-parallax",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-parallax-C6xOLx3K.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-portfolio-standard",
-    path: "/old/dark/portfolio-standard",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-standard-Dy2SdFeo.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-portfolio-sticky",
-    path: "/old/dark/portfolio-sticky",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-sticky-CSfGDP_r.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-project1",
-    path: "/old/dark/project1",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project1-CXeazeWH.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-project2",
-    path: "/old/dark/project2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project2-C05DImnZ.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-project3",
-    path: "/old/dark/project3",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project3-DEA9d07V.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-project4",
-    path: "/old/dark/project4",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project4-tQX6hSQh.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-project5",
-    path: "/old/dark/project5",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project5-BhwHi0HE.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-project6",
-    path: "/old/dark/project6",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project6-chvx-TbX.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-showcase-carousel",
-    path: "/old/dark/showcase-carousel",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-carousel-DSIRl7Cc.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-showcase-fullscreen",
-    path: "/old/dark/showcase-fullscreen",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-fullscreen-Di3v1tNZ.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-showcase-half-slider",
-    path: "/old/dark/showcase-half-slider",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-half-slider-FE1zE4Wz.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-showcase-interactive-center",
-    path: "/old/dark/showcase-interactive-center",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-interactive-center-Cx4mH4Wz.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-showcase-interactive-full",
-    path: "/old/dark/showcase-interactive-full",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-interactive-full-WNNS3oVR.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-dark-showcase-interactive-vertical",
-    path: "/old/dark/showcase-interactive-vertical",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-interactive-vertical-Cn8BqkNO.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old",
-    path: "/old",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/index-CVpf6UHO.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-blog-classic",
-    path: "/old/light/blog-classic",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/blog-classic-KycZKaFK.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-blog-details",
-    path: "/old/light/blog-details",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/blog-details-DebCOV-M.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-blog-list",
-    path: "/old/light/blog-list",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/blog-list-BB2v1JZ2.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-blog-list2",
-    path: "/old/light/blog-list2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/blog-list2-fqYhIQZS.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-asymmetric-portfolio",
-    path: "/old/light/home-asymmetric-portfolio",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-asymmetric-portfolio-Dy0hWGLL.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-creative-agency",
-    path: "/old/light/home-creative-agency",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-creative-agency-C047JPCb.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-creative-portfolio",
-    path: "/old/light/home-creative-portfolio",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-creative-portfolio-BoRLEuYh.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-digital-agency",
-    path: "/old/light/home-digital-agency",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-digital-agency-RYqcyrIi.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-freelancer",
-    path: "/old/light/home-freelancer",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-freelancer-oGRrKwg5.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-main",
-    path: "/old/light/home-main",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-main-DW9jJ77f.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-minimal-portfolio",
-    path: "/old/light/home-minimal-portfolio",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-minimal-portfolio-D1kSlJpB.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-modern-agency",
-    path: "/old/light/home-modern-agency",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-modern-agency-DAkftgtJ.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-personal-vcard",
-    path: "/old/light/home-personal-vcard",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-personal-vcard-CvBMGbiT.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-home-startup-onepage",
-    path: "/old/light/home-startup-onepage",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/home-startup-onepage-3icckt7e.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-about",
-    path: "/old/light/page-about",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-about-DeBM9nzq.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-about2",
-    path: "/old/light/page-about2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-about2-Dyxb23yL.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-about3",
-    path: "/old/light/page-about3",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-about3-BDtXpmEJ.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-contact",
-    path: "/old/light/page-contact",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-contact-CThblA-9.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-contact2",
-    path: "/old/light/page-contact2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-contact2-ycbTh15T.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-contact3",
-    path: "/old/light/page-contact3",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-contact3-CAxbh97B.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-error404",
-    path: "/old/light/page-error404",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-error404-DC5T-42U.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-FAQS",
-    path: "/old/light/page-FAQS",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-FAQS-BqbsR0wm.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-services-details",
-    path: "/old/light/page-services-details",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-services-details-CHW2i_KA.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-services",
-    path: "/old/light/page-services",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-services-BRTeTsoC.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-services2",
-    path: "/old/light/page-services2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-services2-RfdnR8cT.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-team-single",
-    path: "/old/light/page-team-single",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-team-single-D1xcgMID.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-page-team",
-    path: "/old/light/page-team",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/page-team-D1ppEG_U.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-portfolio-caption-cursor",
-    path: "/old/light/portfolio-caption-cursor",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-caption-cursor-CXE_OkQg.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-portfolio-gallery",
-    path: "/old/light/portfolio-gallery",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-gallery-BLkEHy-U.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-portfolio-masonry",
-    path: "/old/light/portfolio-masonry",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-masonry-BHINOgLu.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-portfolio-metro",
-    path: "/old/light/portfolio-metro",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-metro-Dqk8soNg.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-portfolio-outline",
-    path: "/old/light/portfolio-outline",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-outline-DUubtWPX.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-portfolio-parallax",
-    path: "/old/light/portfolio-parallax",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-parallax-DWva5haU.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-portfolio-standard",
-    path: "/old/light/portfolio-standard",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-standard-C3wBydK0.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-portfolio-sticky",
-    path: "/old/light/portfolio-sticky",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/portfolio-sticky-CkANb8Vk.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-project1",
-    path: "/old/light/project1",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project1-B3B3kr7U.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-project2",
-    path: "/old/light/project2",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project2-BvB_TF5G.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-project3",
-    path: "/old/light/project3",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project3-DBPjdBPQ.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-project4",
-    path: "/old/light/project4",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project4-CUEhSV-h.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-project5",
-    path: "/old/light/project5",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project5-Bbk_FRQj.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-project6",
-    path: "/old/light/project6",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/project6-DUfDnqMQ.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-showcase-carousel",
-    path: "/old/light/showcase-carousel",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-carousel-DN21ruXo.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-showcase-fullscreen",
-    path: "/old/light/showcase-fullscreen",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-fullscreen-ByYCoyGh.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-showcase-half-slider",
-    path: "/old/light/showcase-half-slider",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-half-slider-0oCmD7Gp.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-showcase-interactive-center",
-    path: "/old/light/showcase-interactive-center",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-interactive-center-CvNzFN8K.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-showcase-interactive-full",
-    path: "/old/light/showcase-interactive-full",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-interactive-full-DLUw1A8r.mjs').then((m) => m.default || m)
-  },
-  {
-    name: "old-light-showcase-interactive-vertical",
-    path: "/old/light/showcase-interactive-vertical",
-    meta: {},
-    alias: [],
-    redirect: void 0 ,
-    component: () => import('./_nuxt/showcase-interactive-vertical-J2Y-XGtv.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-DvTMdC7Y.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1867,8 +1099,10 @@ const messages = {
     nav: {
       home: "Home",
       works: "Works",
-      connect: "Connect",
-      menu: "Menu"
+      connect: "Contact Us",
+      menu: "Menu",
+      address: "Address",
+      social: "Social Media"
     },
     ribbons: {
       left: "BUILDING DIGITAL DESIGN",
@@ -1940,6 +1174,17 @@ const messages = {
       subtitle: "A showcase of projects that merge design, technology, and storytelling.",
       cta: "View all projects"
     },
+    marquee: {
+      item_mvp: "MVP Product Design",
+      item_amazing: "Amazing Design",
+      item_visual_identity: "Visual Identity",
+      item_branding: "Branding Strategy",
+      item_saas: "SaaS Products",
+      item_web_dev: "Web Development",
+      item_ai: "AI Powered Design",
+      item_ai_agents: "AI Agents",
+      item_ai_automation: "AI Automations"
+    },
     team: {
       kicker: "Our Team",
       title_a: "Meet our",
@@ -1953,7 +1198,22 @@ const messages = {
       success: "Thanks! We’ll get back to you shortly."
     },
     footer: {
-      claim: "Magno Studio — Design, Technology & Bold Ideas."
+      // cta_title ya lo podrías tener de antes; si no, añadilo:
+      cta_title: "Let's talk",
+      address_label: "Address",
+      address_line1: "Miami Boulevard 2",
+      address_line2: "Punta del Este, Uruguay",
+      aria_primary: "Primary navigation",
+      aria_social: "Social links"
+    },
+    links: {
+      home: "Home",
+      work: "Work",
+      contact: "Contact Us"
+    },
+    social: {
+      instagram: "Instagram",
+      behance: "Behance"
     }
   },
   es: {
@@ -1981,6 +1241,7 @@ const messages = {
       headline_3: "contactarnos haciendo clic",
       headline_cta: "aquí",
       years_label: "Años de experiencia",
+      years_amount: "3",
       paragraph: "Ya seas una agencia de desarrollo que quiere tercerizar diseño, una empresa en busca de un Product Designer o un equipo de Producto, una agencia de marketing que necesita una landing, una startup que quiere lanzar una app o una compañía que planea rebranding o rediseño web, recibimos cada desafío con los brazos abiertos.",
       marquee: [
         "Diseño UI-UX",
@@ -2032,6 +1293,17 @@ const messages = {
       subtitle: "Una muestra de proyectos que unen diseño, tecnología y storytelling.",
       cta: "Ver todos los proyectos"
     },
+    marquee: {
+      item_mvp: "Diseño de MVP",
+      item_amazing: "Diseño increíble",
+      item_visual_identity: "Identidad visual",
+      item_branding: "Estrategia de marca",
+      item_saas: "Productos SaaS",
+      item_web_dev: "Desarrollo web",
+      item_ai: "Diseño potenciado por IA",
+      item_ai_agents: "Agentes de IA",
+      item_ai_automation: "Automatizaciones con IA"
+    },
     team: {
       kicker: "Nuestro equipo",
       title_a: "Conocé a nuestras",
@@ -2045,7 +1317,21 @@ const messages = {
       success: "¡Gracias! Te responderemos muy pronto."
     },
     footer: {
-      claim: "Magno Studio — Diseño, Tecnología e Ideas que inspiran."
+      cta_title: "Contactenos",
+      address_label: "Dirección",
+      address_line1: "Miami Boulevard 2",
+      address_line2: "Punta del Este, Uruguay",
+      aria_primary: "Navegación principal",
+      aria_social: "Redes sociales"
+    },
+    links: {
+      home: "Inicio",
+      work: "Trabajos",
+      contact: "Contacto"
+    },
+    social: {
+      instagram: "Instagram",
+      behance: "Behance"
     }
   }
 };

@@ -1,1 +1,0 @@
-import"./entry.CKf-3ss5.js";const i=""+globalThis.__publicAssetsURL("light/assets/imgs/serv-icons/0.png"),t=""+globalThis.__publicAssetsURL("light/assets/imgs/serv-icons/1.png"),o=""+globalThis.__publicAssetsURL("light/assets/imgs/serv-icons/2.png");export{i as _,t as a,o as b};

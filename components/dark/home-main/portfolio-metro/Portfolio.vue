@@ -9,10 +9,10 @@
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="/dark/project4">Aevoe</a>
+                <a href="#">Aevoe</a>
               </h5>
               <p class="ml-auto">
-                <a href="/dark/portfolio-metro">Branding</a>
+                <a href="#">Branding</a>
               </p>
             </div>
           </div>
@@ -24,10 +24,10 @@
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="/dark/project4">Digital Design</a>
+                <a href="#">Digital Design</a>
               </h5>
               <p class="ml-auto">
-                <a href="/dark/portfolio-metro">Branding</a>
+                <a href="#">Branding</a>
               </p>
             </div>
           </div>
@@ -39,10 +39,10 @@
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="/dark/project4">Nice guy</a>
+                <a href="#">Nice guy</a>
               </h5>
               <p class="ml-auto">
-                <a href="/dark/portfolio-metro">Photography</a>
+                <a href="#">Photography</a>
               </p>
             </div>
           </div>
@@ -54,10 +54,10 @@
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="/dark/project4">Digital Design</a>
+                <a href="#">Digital Design</a>
               </h5>
               <p class="ml-auto">
-                <a href="/dark/portfolio-metro">Branding</a>
+                <a href="#">Branding</a>
               </p>
             </div>
           </div>
@@ -69,10 +69,10 @@
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="/dark/project4">Digital Design</a>
+                <a href="#">Digital Design</a>
               </h5>
               <p class="ml-auto">
-                <a href="/dark/portfolio-metro">Branding</a>
+                <a href="#">Branding</a>
               </p>
             </div>
           </div>
@@ -84,10 +84,10 @@
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="/project4">Digital Design</a>
+                <a href="#">Digital Design</a>
               </h5>
               <p class="ml-auto">
-                <a href="/portfolio-metro">Branding</a>
+                <a href="#">Branding</a>
               </p>
             </div>
           </div>
@@ -99,10 +99,10 @@
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="/dark/project4">Digital Design</a>
+                <a href="#">Digital Design</a>
               </h5>
               <p class="ml-auto">
-                <a href="/dark/portfolio-metro">Branding</a>
+                <a href="#">Branding</a>
               </p>
             </div>
           </div>
@@ -114,10 +114,10 @@
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="/dark/project4">Digital Design</a>
+                <a href="#">Digital Design</a>
               </h5>
               <p class="ml-auto">
-                <a href="/dark/portfolio-metro">Branding</a>
+                <a href="#">Branding</a>
               </p>
             </div>
           </div>

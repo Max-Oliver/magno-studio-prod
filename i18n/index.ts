@@ -8,8 +8,10 @@ const messages = {
     nav: {
       home: 'Home',
       works: 'Works',
-      connect: 'Connect',
+      connect: 'Contact Us',
       menu: 'Menu',
+      address: 'Address',
+      social: 'Social Media'
     },
     ribbons: {
       left: 'BUILDING DIGITAL DESIGN',
@@ -85,6 +87,17 @@ const messages = {
         'A showcase of projects that merge design, technology, and storytelling.',
       cta: 'View all projects',
     },
+    marquee: {
+      item_mvp: 'MVP Product Design',
+      item_amazing: 'Amazing Design',
+      item_visual_identity: 'Visual Identity',
+      item_branding: 'Branding Strategy',
+      item_saas: 'SaaS Products',
+      item_web_dev: 'Web Development',
+      item_ai: 'AI Powered Design',
+      item_ai_agents: 'AI Agents',
+      item_ai_automation: 'AI Automations',
+    },
     team: {
       kicker: 'Our Team',
       title_a: 'Meet our',
@@ -98,7 +111,22 @@ const messages = {
       success: 'Thanks! We’ll get back to you shortly.',
     },
     footer: {
-      claim: 'Magno Studio — Design, Technology & Bold Ideas.',
+      // cta_title ya lo podrías tener de antes; si no, añadilo:
+      cta_title: "Let's talk",
+      address_label: 'Address',
+      address_line1: 'Miami Boulevard 2',
+      address_line2: 'Punta del Este, Uruguay',
+      aria_primary: 'Primary navigation',
+      aria_social: 'Social links',
+    },
+    links: {
+      home: 'Home',
+      work: 'Work',
+      contact: 'Contact Us',
+    },
+    social: {
+      instagram: 'Instagram',
+      behance: 'Behance',
     },
   },
 
@@ -129,6 +157,7 @@ const messages = {
       headline_3: 'contactarnos haciendo clic',
       headline_cta: 'aquí',
       years_label: 'Años de experiencia',
+      years_amount: '3',
       paragraph:
         'Ya seas una agencia de desarrollo que quiere tercerizar diseño, una empresa en busca de un Product Designer o un equipo de Producto, una agencia de marketing que necesita una landing, una startup que quiere lanzar una app o una compañía que planea rebranding o rediseño web, recibimos cada desafío con los brazos abiertos.',
       marquee: [
@@ -183,6 +212,17 @@ const messages = {
         'Una muestra de proyectos que unen diseño, tecnología y storytelling.',
       cta: 'Ver todos los proyectos',
     },
+    marquee: {
+      item_mvp: 'Diseño de MVP',
+      item_amazing: 'Diseño increíble',
+      item_visual_identity: 'Identidad visual',
+      item_branding: 'Estrategia de marca',
+      item_saas: 'Productos SaaS',
+      item_web_dev: 'Desarrollo web',
+      item_ai: 'Diseño potenciado por IA',
+      item_ai_agents: 'Agentes de IA',
+      item_ai_automation: 'Automatizaciones con IA',
+    },
     team: {
       kicker: 'Nuestro equipo',
       title_a: 'Conocé a nuestras',
@@ -196,7 +236,21 @@ const messages = {
       success: '¡Gracias! Te responderemos muy pronto.',
     },
     footer: {
-      claim: 'Magno Studio — Diseño, Tecnología e Ideas que inspiran.',
+      cta_title: 'Contactenos',
+      address_label: 'Dirección',
+      address_line1: 'Miami Boulevard 2',
+      address_line2: 'Punta del Este, Uruguay',
+      aria_primary: 'Navegación principal',
+      aria_social: 'Redes sociales',
+    },
+    links: {
+      home: 'Inicio',
+      work: 'Trabajos',
+      contact: 'Contacto',
+    },
+    social: {
+      instagram: 'Instagram',
+      behance: 'Behance',
     },
   },
 } as const;

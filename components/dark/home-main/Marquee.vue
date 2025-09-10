@@ -5,56 +5,56 @@
         <div class="box">
           <div class="item">
             <h4 class="d-flex align-items-center">
-              <span>MVP Product Design</span>
+              <span>{{ t('marquee.item_mvp') }}</span>
               <span class="fz-50 ml-50 stroke icon">*</span>
             </h4>
           </div>
           <div class="item">
             <h4 class="d-flex align-items-center">
-              <span>Amazing Design</span>
+              <span>{{ t('marquee.item_amazing') }}</span>
               <span class="fz-50 ml-50 stroke icon">*</span>
             </h4>
           </div>
           <div class="item">
             <h4 class="d-flex align-items-center">
-              <span>Visual Identity</span>
+              <span>{{ t('marquee.item_visual_identity') }}</span>
               <span class="fz-50 ml-50 stroke icon">*</span>
             </h4>
           </div>
           <div class="item">
             <h4 class="d-flex align-items-center">
-              <span>Branding Strategy</span>
+              <span>{{ t('marquee.item_branding') }}</span>
               <span class="fz-50 ml-50 stroke icon">*</span>
             </h4>
           </div>
           <div class="item">
             <h4 class="d-flex align-items-center">
-              <span>SaaS Products</span>
+              <span>{{ t('marquee.item_saas') }}</span>
               <span class="fz-50 ml-50 stroke icon">*</span>
             </h4>
           </div>
           <div class="item">
             <h4 class="d-flex align-items-center">
-              <span>Web Development</span>
+              <span>{{ t('marquee.item_web_dev') }}</span>
               <span class="fz-50 ml-50 stroke icon">*</span>
             </h4>
           </div>
 
           <div class="item">
             <h4 class="d-flex align-items-center">
-              <span>AI Powered Design</span>
+              <span>{{ t('marquee.item_ai') }}</span>
               <span class="fz-50 ml-50 stroke icon">*</span>
             </h4>
           </div>
           <div class="item">
             <h4 class="d-flex align-items-center">
-              <span>Community Management</span>
+              <span>{{ t('marquee.item_ai_agents') }}</span>
               <span class="fz-50 ml-50 stroke icon">*</span>
             </h4>
           </div>
           <div class="item">
             <h4 class="d-flex align-items-center">
-              <span>Amazing Design</span>
+              <span>{{ t('marquee.item_ai_automation') }}</span>
               <span class="fz-50 ml-50 stroke icon">*</span>
             </h4>
           </div>
@@ -63,3 +63,9 @@
     </div>
   </section>
 </template>
+
+
+<script setup>
+import { useI18n } from '@/i18n';
+const { t } = useI18n();
+</script>
