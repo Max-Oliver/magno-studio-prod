@@ -34,7 +34,7 @@ import Header from '@/components/dark/home-main/Header';
 import Intro from '@/components/dark/home-main/Intro';
 import Marquee from '@/components/dark/home-main/Marquee';
 import Navbar from '@/components/dark/creative-agency/Navbar';
-import Portfolio from '@/components/dark/home-main/Portfolio';
+import Portfolio from '@/components/dark/home-main/portfolio-metro/Portfolio';
 import Services from '@/components/dark/home-main/Services';
 import Services2 from '@/components/dark/home-main/Services2';
 import Team from '@/components/dark/home-main/Team';

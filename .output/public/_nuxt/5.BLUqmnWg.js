@@ -1,1 +1,0 @@
-import"./entry.DinIEbfK.js";const t=""+globalThis.__publicAssetsURL("light/assets/imgs/works/stand/1.jpg"),i=""+globalThis.__publicAssetsURL("light/assets/imgs/works/stand/3.jpg"),o=""+globalThis.__publicAssetsURL("light/assets/imgs/works/stand/5.jpg");export{t as _,i as a,o as b};
