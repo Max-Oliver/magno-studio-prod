@@ -1,7 +1,7 @@
 [
-    { "img": "/dark/assets/imgs/serv-icons/1.svg", "title": "Branding & Identity", "desc": "Logos, palettes, guidelines and full identity systems that stand out.", "link": "/dark/home/works" },
-    { "img": "/dark/assets/imgs/serv-icons/2.svg", "title": "Web Design", "desc": "Modern, fast and accessible websites with delightful micro-interactions.", "link": "/dark/home/works" },
-    { "img": "/dark/assets/imgs/serv-icons/3.svg", "title": "Web Development", "desc": "Next.js, WordPress/Elementor and Lovable for speed with craft.", "link": "/dark/home/works" },
-    { "img": "/dark/assets/imgs/serv-icons/4.svg", "title": "Product Design", "desc": "UX/UI for apps & webapps driven by research and business goals.", "link": "/dark/home/works" }
-  ]
+    { "img": "/dark/assets/imgs/serv-icons/1.png", "title": "Branding & Identity", "desc": "Logos, palettes, guidelines and full identity systems that stand out.", "link": "/dark/home/works" },
+    { "img": "/dark/assets/imgs/serv-icons/2.png", "title": "Web Design", "desc": "Modern, fast and accessible websites with delightful micro-interactions.", "link": "/dark/home/works" },
+    { "img": "/dark/assets/imgs/serv-icons/3.png", "title": "Web Development", "desc": "Next.js, WordPress/Elementor and Lovable for speed with craft.", "link": "/dark/home/works" },
+    { "img": "/dark/assets/imgs/serv-icons/4.png", "title": "Product Design", "desc": "UX/UI for apps & webapps driven by research and business goals.", "link": "/dark/home/works" }
+]
   

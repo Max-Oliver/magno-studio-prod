@@ -21,7 +21,6 @@
         </div>
       </div>
 
-      <!-- ⚠️ NADA de data-carousel/data-swiper y SIN clase .swiper-container -->
       <ClientOnly>
         <Swiper
           class="serv-swiper"

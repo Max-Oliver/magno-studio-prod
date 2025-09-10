@@ -85,6 +85,12 @@ const messages = {
         'A showcase of projects that merge design, technology, and storytelling.',
       cta: 'View all projects',
     },
+    team: {
+      kicker: 'Our Team',
+      title_a: 'Meet our',
+      title_b: 'legends',
+      cta: 'Join us',
+    },
     contact: {
       title: 'Let’s start something great together',
       subtitle: 'Tell us about your project, and let’s make it happen.',
@@ -176,6 +182,12 @@ const messages = {
       subtitle:
         'Una muestra de proyectos que unen diseño, tecnología y storytelling.',
       cta: 'Ver todos los proyectos',
+    },
+    team: {
+      kicker: 'Nuestro equipo',
+      title_a: 'Conocé a nuestras',
+      title_b: 'leyendas',
+      cta: 'Súmate',
     },
     contact: {
       title: 'Hagamos algo grande juntos',

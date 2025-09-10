@@ -8,22 +8,22 @@
     <div id="smooth-content">
       <main class="main-bg">
         <Header />
-        <Contact />
+        <Portfolio />
       </main>
       <Footer />
     </div>
   </div>
 </template>
 <script setup>
-import Footer from '@/components/dark/blog-details/Footer';
 import Lines from '@/components/dark/common/Lines';
 import ProgressScroll from '@/components/dark/common/ProgressScroll';
 import Cursor from '@/components/dark/common/cusor';
 import LoadingScreen from '@/components/dark/common/loader';
-import Contact from '@/components/dark/contact/Contact';
-import Header from '@/components/dark/contact/Header';
-import Navbar from '@/components/dark/creative-agency/Navbar';
 import { onMounted } from 'vue';
+import Navbar from '@/components/dark/home-main/Navbar';
+import Header from '@/components/dark/home-main/portfolio-metro/PortfolioHeader';
+import Portfolio from '@/components/dark/home-main/portfolio-metro/Portfolio';
+import Footer from '@/components/dark/home-main/Footer';
 
 useHead({
   link: [
@@ -33,7 +33,6 @@ useHead({
   ],
   // script: [{ src: '/dark/assets/js/smoother-script.js', defer: true }],
 });
-
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
   ScrollTrigger.normalizeScroll(true);

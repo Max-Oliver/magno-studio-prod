@@ -2,16 +2,16 @@
   <section class="team section-padding">
     <div class="container">
       <div class="sec-head mb-80">
-        <h6 class="sub-title main-color mb-25">Our Team</h6>
+        <h6 class="sub-title main-color mb-25">{{ t('team.kicker') }}</h6>
         <div class="bord pt-25 bord-thin-top d-flex align-items-center">
           <h2 class="fw-600 d-rotate wow">
             <span class="rotate-text">
-              Meet our <span class="fw-200">legends</span>
+              {{ t('team.title_a') }} <span class="fw-200">{{ t('team.title_b') }}</span>
             </span>
           </h2>
           <div class="ml-auto">
             <a href="/dark/page-team" class="go-more">
-              <span class="text">Join to us</span>
+              <span class="text">{{ t('team.cta') }}</span>
               <span class="icon ti-arrow-top-right"></span>
             </a>
           </div>
@@ -46,6 +46,10 @@
     </div>
   </section>
 </template>
+
 <script setup>
 import data from '@/data/team.json';
+import { useI18n } from '@/i18n';
+const { t } = useI18n();
+
 </script>
