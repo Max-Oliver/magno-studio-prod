@@ -24,7 +24,7 @@
                 </span>
               </span>
             </h4>
-            <div class="exp mt-80 md-mb15">
+            <div class="exp mt-0 md-mb0">
               <h2 class="">
                 <span class="fz-70 numb-font main-color">
                   {{ t('intro.years_amount') }}
@@ -42,7 +42,7 @@
               {{ t('intro.paragraph') }}
             </p>
           </div>
-          <div class="main-marq o-hidden mt-100">
+          <!-- <div class="main-marq o-hidden mt-100">
             <div class="slide-har st1">
               <div class="box" v-for="n in 2" :key="n">
                 <div class="item" v-for="(item, i) in marquee" :key="i">
@@ -54,7 +54,7 @@
               </div>
 
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

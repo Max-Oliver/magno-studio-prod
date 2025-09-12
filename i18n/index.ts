@@ -11,19 +11,19 @@ const messages = {
       connect: 'Contact Us',
       menu: 'Menu',
       address: 'Address',
-      social: 'Social Media'
+      social: 'Social Media',
     },
     ribbons: {
       left: 'BUILDING DIGITAL DESIGN',
       right: 'CREATIVE STUDIO',
     },
     // en messages.en
-    hero: {
-      line_1: 'We create',
-      line_2: 'impactful',
-      line_3: 'digital experiences',
-      paragraph:
-        'We combine forward-thinking design with modern technology to tell stories that transform and grow our partners’ brands.',
+    heroSlides: {
+      s1: { h2: 'We Create', h1: 'Awesome Design' }, // (corregí "Awoseme" -> Awesome)
+      s2: { h2: 'We Create Impactful', h1: 'Digital Experiences' },
+      s3: { h2: 'Elevate your', h1: 'Brand & Fuel Growth' },
+      prev: 'Prev',
+      next: 'Next',
     },
     // EN
     intro: {
@@ -31,8 +31,8 @@ const messages = {
       headline_2: 'meaningful digital project you can easily',
       headline_3: 'reach us by clicking',
       headline_cta: 'here',
-      years_label: 'Years of Experience',
-      years_amount: '3',
+      //  years_label: 'Years of Experience',
+      // years_amount: '3',
       paragraph:
         'Whether you are a development agency looking to outsource design work, a company in search of a Product Designer or Product Team, a marketing agency that needs a landing page, a startup that wants to launch an app, or an enterprise that plans to rebrand or redesign its website, we welcome any challenge with our arms wide open.',
       marquee: [
@@ -44,42 +44,104 @@ const messages = {
       ],
     },
     servicesIntro: {
-      watch: "Watch Intro",
-      why: "Why Choose Us",
-      titleLines: ["Best creative & modern", "digital agency."],
+      watch: 'Watch Intro',
+      why: 'Why Choose Us',
+      titleLines: ['Best creative & modern', 'digital agency.'],
       paragraph:
-        "We craft brands, websites and digital products that are beautiful, fast and purposeful.",
+        'We craft brands, websites and digital products that are beautiful, fast and purposeful.',
       stats: {
         projects_value: 7,
-        projects_label: ["Projects", "Completed"],
+        projects_label: ['Projects', 'Completed'],
         satisfaction_value: 10,
-        satisfaction_unit: "+",
-        satisfaction_label: ["Customers", "Satisfaction"]
-      }
+        satisfaction_unit: '+',
+        satisfaction_label: ['Customers', 'Satisfaction'],
+      },
     },
     services2: {
-      eyebrow: "Our Specialize",
-      title_a: "Comprehensive",
-      title_b: "Services.",
-      read_more: "Read More"
+      eyebrow: 'Our Specialize',
+      title_a: 'Comprehensive',
+      title_b: 'Services.',
+      read_more: 'Read More',
     },
-    services: {
-      title: 'What we do',
-      list: [
+    servicesTabs: {
+      eyebrow: 'Who we are?',
+      title: 'The ultimate guide to marketing success.',
+      intro:
+        'We shifted our talents to frontier science because we wanted our work to have tangible impact. We get front row seats to the future.',
+      cta: 'Read More',
+      tabs: [
         {
-          name: 'Branding & Identity',
-          desc: 'We build identities that connect with people and leave a mark.',
+          num: '01',
+          label: 'About Us',
+          img: '/dark/assets/imgs/intro/03.jpg',
+          icon: '/dark/assets/imgs/serv-icons/0.png',
+          text: 'We are a creative studio specializing in design, development and strategy across multiple disciplines to build exceptional digital experiences.',
         },
         {
-          name: 'Web & Digital Experiences',
-          desc: 'From sleek websites to immersive platforms, we design with purpose and style.',
+          num: '02',
+          label: 'Our Mission',
+          img: '/dark/assets/imgs/intro/02.jpg',
+          icon: '/dark/assets/imgs/serv-icons/1.png',
+          text: 'We partner with brands to craft useful, beautiful and fast products that move the business forward with measurable outcomes.',
         },
         {
-          name: 'Creative Strategy',
-          desc: 'We align creativity with business goals to generate measurable results.',
+          num: '03',
+          label: 'Our Vision',
+          img: '/dark/assets/imgs/intro/03.jpg',
+          icon: '/dark/assets/imgs/serv-icons/2.png',
+          text: 'Design and technology working together to create memorable, accessible and scalable solutions that people love to use.',
+        },
+        {
+          num: '04',
+          label: 'Achievements',
+          img: '/dark/assets/imgs/intro/03.jpg',
+          icon: '/dark/assets/imgs/serv-icons/0.png',
+          text: 'Selected projects, awards and case studies that reflect our commitment to quality, performance and brand impact.',
         },
       ],
-      cta: 'View services',
+    },
+    // EN
+    servicesBoxes: {
+      eyebrow: 'Our Specialize',
+      title_a: 'What We',
+      title_b: 'Offer',
+      read_more: 'Read More',
+      list: [
+        {
+          titleA: 'Branding',
+          titleB: 'Design',
+          img: '/dark/assets/imgs/serv-icons/5.png',
+          desc: 'Live workshop where we define the main problems and challenges before building a strategic plan moving forward.',
+          link: '/dark/page-services-details',
+        },
+        {
+          titleA: 'Graphic Design',
+          titleB: '& Social Media',
+          img: '/dark/assets/imgs/serv-icons/3.png',
+          desc: 'Live workshop where we define the main problems and challenges before building a strategic plan moving forward.',
+          link: '/dark/page-services-details',
+        },
+        {
+          titleA: 'MVP Product',
+          titleB: 'Development',
+          img: '/dark/assets/imgs/serv-icons/5.png',
+          desc: 'Live workshop where we define the main problems and challenges before building a strategic plan moving forward.',
+          link: '/dark/page-services-details',
+        },
+        {
+          titleA: 'Web',
+          titleB: 'Development',
+          img: '/dark/assets/imgs/serv-icons/4.png',
+          desc: 'Live workshop where we define the main problems and challenges before building a strategic plan moving forward.',
+          link: '/dark/page-services-details',
+        },
+      ],
+    },
+    portfolio: {
+      kicker: 'Our Portfolio',
+      title_a: 'What we',
+      title_b: 'offer',
+      read_more: 'Read more',
     },
     works: {
       title: 'Selected work',
@@ -143,12 +205,12 @@ const messages = {
     },
 
     // en messages.es
-    hero: {
-      line_1: 'Creamos',
-      line_2: 'Experiencias',
-      line_3: 'con impacto',
-      paragraph:
-        'Combinamos diseño de vanguardia con tecnología moderna para contar historias que transforman y hacen crecer a nuestras marcas aliadas.',
+    heroSlides: {
+      s1: { h2: 'Creamos', h1: 'Diseños Asombrosos' },
+      s2: { h2: 'Creamos experiencias', h1: 'Digitales con impacto' },
+      s3: { h2: 'Elevá tu', h1: 'Marca y acelera el crecimiento' },
+      prev: 'Anterior',
+      next: 'Siguiente',
     },
     // ES
     intro: {
@@ -156,8 +218,8 @@ const messages = {
       headline_2: 'proyecto digital con sentido, podés',
       headline_3: 'contactarnos haciendo clic',
       headline_cta: 'aquí',
-      years_label: 'Años de experiencia',
-      years_amount: '3',
+      // years_label: 'Años de experiencia',
+      // years_amount: '3',
       paragraph:
         'Ya seas una agencia de desarrollo que quiere tercerizar diseño, una empresa en busca de un Product Designer o un equipo de Producto, una agencia de marketing que necesita una landing, una startup que quiere lanzar una app o una compañía que planea rebranding o rediseño web, recibimos cada desafío con los brazos abiertos.',
       marquee: [
@@ -169,42 +231,103 @@ const messages = {
       ],
     },
     servicesIntro: {
-      watch: "Ver Intro",
-      why: "¿Por qué elegirnos?",
-      titleLines: ["La agencia creativa y", "moderna que necesitás."],
+      watch: 'Ver Intro',
+      why: '¿Por qué elegirnos?',
+      titleLines: ['La agencia creativa y', 'moderna que necesitás.'],
       paragraph:
-        "Diseñamos marcas, sitios web y productos digitales bellos, rápidos y con propósito.",
+        'Diseñamos marcas, sitios web y productos digitales bellos, rápidos y con propósito.',
       stats: {
         projects_value: 7,
-        projects_label: ["Proyectos", "Completados"],
+        projects_label: ['Proyectos', 'Completados'],
         satisfaction_value: 10,
-        satisfaction_unit: "+",
-        satisfaction_label: ["Clientes", "Satisfechos"]
-      }
+        satisfaction_unit: '+',
+        satisfaction_label: ['Clientes', 'Satisfechos'],
+      },
     },
     services2: {
-      eyebrow: "Nos especializamos en",
-      title_a: "Servicios",
-      title_b: "integrales.",
-      read_more: "Ver más"
+      eyebrow: 'Nos especializamos en',
+      title_a: 'Servicios',
+      title_b: 'integrales.',
+      read_more: 'Ver más',
     },
-    services: {
-      title: 'Qué hacemos',
-      list: [
+    servicesTabs: {
+      eyebrow: '¿Quiénes somos?',
+      title: 'La guía definitiva para el éxito en marketing.',
+      intro:
+        'Llevamos nuestros talentos a la frontera de la tecnología para generar impacto real. Así, vivimos en primera fila el futuro.',
+      cta: 'Ver más',
+      tabs: [
         {
-          name: 'Branding & Identidad',
-          desc: 'Creamos identidades que conectan con las personas y dejan huella.',
+          num: '01',
+          label: 'Sobre nosotros',
+          img: '/dark/assets/imgs/about-us/about_us_image.png',
+          icon: '/dark/assets/imgs/serv-icons/0.png',
+          text: 'Somos un estudio creativo especializado en diseño, desarrollo y estrategia para construir experiencias digitales excepcionales.',
         },
         {
-          name: 'Web & Experiencias Digitales',
-          desc: 'Desde sitios elegantes hasta plataformas inmersivas, diseñamos con propósito y estilo.',
+          num: '02',
+          label: 'Nuestra misión',
+          img: '/dark/assets/imgs/intro/02.jpg',
+          icon: '/dark/assets/imgs/serv-icons/1.png',
+          text: 'Trabajamos junto a marcas para crear productos útiles, bellos y rápidos que impulsen el negocio con resultados medibles.',
         },
         {
-          name: 'Estrategia Creativa',
-          desc: 'Alineamos creatividad con objetivos de negocio para generar resultados medibles.',
+          num: '03',
+          label: 'Nuestra visión',
+          img: '/dark/assets/imgs/intro/03.jpg',
+          icon: '/dark/assets/imgs/serv-icons/2.png',
+          text: 'Diseño y tecnología en conjunto para crear soluciones memorables, accesibles y escalables que la gente ame usar.',
+        },
+        {
+          num: '04',
+          label: 'Logros',
+          img: '/dark/assets/imgs/intro/03.jpg',
+          icon: '/dark/assets/imgs/serv-icons/0.png',
+          text: 'Proyectos, reconocimientos y casos de éxito que reflejan nuestro compromiso con la calidad, el performance y el impacto de marca.',
         },
       ],
-      cta: 'Ver servicios',
+    },
+    servicesBoxes: {
+      eyebrow: "Nos especializamos en",
+      title_a: "Qué",
+      title_b: "Ofrecemos",
+      read_more: "Ver más",
+      list: [
+        {
+          titleA: "Branding",
+          titleB: "& Identidad",
+          img: "/dark/assets/imgs/serv-icons/5.png",
+          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
+          link: "/dark/page-services-details"
+        },
+        {
+          titleA: "Diseño Gráfico",
+          titleB: "y Social Media",
+          img: "/dark/assets/imgs/serv-icons/3.png",
+          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
+          link: "/dark/page-services-details"
+        },
+        {
+          titleA: "Desarrollo",
+          titleB: "de MVP",
+          img: "/dark/assets/imgs/serv-icons/5.png",
+          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
+          link: "/dark/page-services-details"
+        },
+        {
+          titleA: "Desarrollo",
+          titleB: "Web",
+          img: "/dark/assets/imgs/serv-icons/4.png",
+          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
+          link: "/dark/page-services-details"
+        }
+      ]
+    },
+    portfolio: {
+      kicker: 'Nuestro portafolio',
+      title_a: 'Qué',
+      title_b: 'ofrecemos',
+      read_more: 'Leer más',
     },
     works: {
       title: 'Trabajos destacados',
@@ -225,8 +348,8 @@ const messages = {
     },
     team: {
       kicker: 'Nuestro equipo',
-      title_a: 'Conocé a nuestras',
-      title_b: 'leyendas',
+      title_a: 'Conocé a nuestros',
+      title_b: 'Founders',
       cta: 'Súmate',
     },
     contact: {

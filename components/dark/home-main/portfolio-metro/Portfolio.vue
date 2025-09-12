@@ -1,6 +1,7 @@
 <template>
   <section class="work-metro section-padding pt-40 sub-bg">
     <div class="container-xl">
+
       <div class="row xxlg-marg justify-content-between">
         <div class="col-lg-8 col-md-6">
           <div class="item mt-140">
@@ -126,3 +127,29 @@
     </div>
   </section>
 </template>
+
+
+<script setup lang="ts">
+import { useI18n } from '@/i18n';
+const { t } = useI18n();
+
+</script>
+
+<style scoped>
+.sep-line {
+  position: relative;
+  padding-top: 25px;
+}
+
+.sep-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, .12);
+  /* súbelo a .2 si el fondo es muy oscuro */
+  pointer-events: none;
+}
+</style>

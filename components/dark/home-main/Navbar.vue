@@ -8,13 +8,13 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li @mousemove="handleDropdownMouseMove" @mouseleave="handleDropdownMouseLeave" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/" role="button" aria-haspopup="true"
+            <a class="nav-link" href="/" role="button" aria-haspopup="true"
               aria-expanded="false">
               <span class="rolling-text">{{ t('nav.home') }}</span>
             </a>
           </li>
           <li @mousemove="handleDropdownMouseMove" @mouseleave="handleDropdownMouseLeave" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/home/works" role="button"
+            <a class="nav-link" href="/home/works" role="button"
               aria-haspopup="true" aria-expanded="false">
               <span class="rolling-text">{{ t('nav.works') }}</span>
             </a>

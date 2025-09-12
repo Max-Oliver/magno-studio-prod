@@ -10,7 +10,7 @@
             </span>
           </h2>
           <div class="ml-auto">
-            <a href="/dark/page-team" class="go-more">
+            <a href="#" class="go-more">
               <span class="text">{{ t('team.cta') }}</span>
               <span class="icon ti-arrow-top-right"></span>
             </a>
@@ -30,10 +30,10 @@
             <div class="social">
               <div class="links">
                 <a href="#0">
-                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="#0">
-                  <i class="fab fa-behance"></i>
+                  <i class="fab fa-medium"></i>
                 </a>
                 <a href="#0">
                   <i class="fab fa-instagram"></i>

@@ -11,7 +11,7 @@
         <Intro />
         <Services />
         <Services2 />
-        <Marquee />
+        <!-- <Marquee /> -->
         <Portfolio />
         <Team />
         <Clients />
@@ -29,15 +29,17 @@ import Cursor from '@/components/dark/common/cusor';
 import LoadingScreen from '@/components/dark/common/loader';
 import Clients from '@/components/dark/home-main/Clients';
 import Footer from '@/components/dark/home-main/Footer';
-import Portfolio from '@/components/dark/showcase-half-slider/Header';
+import Portfolio from '@/components/dark/home-main/portfolio-metro/SliderPortfolio.vue';
 
 import WhatsAppFloat from '@/components/dark/home-main/WhatsAppFloat';
-import Header from '@/components/dark/home-main/Header';
+import Header from '@/components/dark/home-main/header/Header';
 import Intro from '@/components/dark/home-main/Intro';
 import Marquee from '@/components/dark/home-main/Marquee';
 import Navbar from '@/components/dark/home-main/Navbar';
 import Services from '@/components/dark/home-main/Services';
-import Services2 from '@/components/dark/home-main/Services2';
+// import Services2 from '@/components/dark/home-main/Services2';
+import Services2 from '@/components/dark/home-main/services/NewServices2.vue';
+
 import Team from '@/components/dark/home-main/Team';
 import { onMounted } from 'vue';
 
