@@ -138,32 +138,33 @@ const messages = {
       ],
     },
     portfolio: {
-      kicker: 'Our Portfolio',
-      title_a: 'What we',
-      title_b: 'offer',
-      read_more: 'Read more',
+      title: 'Our Works',
+      tab_a: 'Home',
+      tab_b: 'Works',
     },
     works: {
-      title: 'Selected work',
-      subtitle:
-        'A showcase of projects that merge design, technology, and storytelling.',
-      cta: 'View all projects',
-    },
-    marquee: {
-      item_mvp: 'MVP Product Design',
-      item_amazing: 'Amazing Design',
-      item_visual_identity: 'Visual Identity',
-      item_branding: 'Branding Strategy',
-      item_saas: 'SaaS Products',
-      item_web_dev: 'Web Development',
-      item_ai: 'AI Powered Design',
-      item_ai_agents: 'AI Agents',
-      item_ai_automation: 'AI Automations',
+      one_title: 'Beru AI',
+      one_subtitle: 'MVP PRODUCT DEVELOPMENT',
+
+      two_title: 'Urban Code',
+      two_subtitle: 'BRANDING DESIGN',
+
+      three_title: 'Beru AI',
+      three_subtitle: 'UI DESIGN',
+
+      four_title: 'Pacho Café',
+      four_subtitle: 'BRANDING DESIGN',
+
+      five_title: 'Esteña Consultores',
+      five_subtitle: 'BRANDING DESIGN',
+
+      prev: 'Prev Slide',
+      next: 'Next Slide',
     },
     team: {
       kicker: 'Our Team',
       title_a: 'Meet our',
-      title_b: 'legends',
+      title_b: 'founders',
       cta: 'Join us',
     },
     contact: {
@@ -189,6 +190,29 @@ const messages = {
     social: {
       instagram: 'Instagram',
       behance: 'Behance',
+    },
+    tab_works: {},
+    tab_contact: {
+      header: {
+        title: 'Contact Us',
+        tab_a: 'Home',
+        tab_b: 'Contact',
+      },
+      address_info: {
+        address: 'address',
+        info_address: 'Miami Boulevard 2 Punta del Este, Uruguay',
+        email: 'Email',
+        info_email: 'contact@magnocreative.com',
+      },
+      send_message_info: {
+        sub_title: 'LET´S CHAT',
+        title: 'SEND A MESSAGE',
+        name: 'Name',
+        email: 'Email',
+        subject: 'Subject',
+        message: 'Message',
+        cta: 'Let´s Talk',
+      },
     },
   },
 
@@ -288,63 +312,64 @@ const messages = {
       ],
     },
     servicesBoxes: {
-      eyebrow: "Nos especializamos en",
-      title_a: "Qué",
-      title_b: "Ofrecemos",
-      read_more: "Ver más",
+      eyebrow: 'Nos especializamos en',
+      title_a: 'Qué',
+      title_b: 'Ofrecemos',
+      read_more: 'Ver más',
       list: [
         {
-          titleA: "Branding",
-          titleB: "& Identidad",
-          img: "/dark/assets/imgs/serv-icons/5.png",
-          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
-          link: "/dark/page-services-details"
+          titleA: 'Branding',
+          titleB: '& Identidad',
+          img: '/dark/assets/imgs/serv-icons/5.png',
+          desc: 'Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.',
+          link: '/dark/page-services-details',
         },
         {
-          titleA: "Diseño Gráfico",
-          titleB: "y Social Media",
-          img: "/dark/assets/imgs/serv-icons/3.png",
-          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
-          link: "/dark/page-services-details"
+          titleA: 'Diseño Gráfico',
+          titleB: 'y Social Media',
+          img: '/dark/assets/imgs/serv-icons/3.png',
+          desc: 'Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.',
+          link: '/dark/page-services-details',
         },
         {
-          titleA: "Desarrollo",
-          titleB: "de MVP",
-          img: "/dark/assets/imgs/serv-icons/5.png",
-          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
-          link: "/dark/page-services-details"
+          titleA: 'Desarrollo',
+          titleB: 'de MVP',
+          img: '/dark/assets/imgs/serv-icons/5.png',
+          desc: 'Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.',
+          link: '/dark/page-services-details',
         },
         {
-          titleA: "Desarrollo",
-          titleB: "Web",
-          img: "/dark/assets/imgs/serv-icons/4.png",
-          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
-          link: "/dark/page-services-details"
-        }
-      ]
+          titleA: 'Desarrollo',
+          titleB: 'Web',
+          img: '/dark/assets/imgs/serv-icons/4.png',
+          desc: 'Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.',
+          link: '/dark/page-services-details',
+        },
+      ],
     },
     portfolio: {
-      kicker: 'Nuestro portafolio',
-      title_a: 'Qué',
-      title_b: 'ofrecemos',
-      read_more: 'Leer más',
+      title: 'Nuestro Catálogo',
+      tab_a: 'Inicio',
+      tab_b: 'Proyectos',
     },
     works: {
-      title: 'Trabajos destacados',
-      subtitle:
-        'Una muestra de proyectos que unen diseño, tecnología y storytelling.',
-      cta: 'Ver todos los proyectos',
-    },
-    marquee: {
-      item_mvp: 'Diseño de MVP',
-      item_amazing: 'Diseño increíble',
-      item_visual_identity: 'Identidad visual',
-      item_branding: 'Estrategia de marca',
-      item_saas: 'Productos SaaS',
-      item_web_dev: 'Desarrollo web',
-      item_ai: 'Diseño potenciado por IA',
-      item_ai_agents: 'Agentes de IA',
-      item_ai_automation: 'Automatizaciones con IA',
+      one_title: 'Beru AI',
+      one_subtitle: 'DESARROLLO DE PRODUCTO MVP',
+
+      two_title: 'Urban Code',
+      two_subtitle: 'DISEÑO DE MARCA',
+
+      three_title: 'Beru AI',
+      three_subtitle: 'DISEÑO UI',
+
+      four_title: 'Pachu Café',
+      four_subtitle: 'DISEÑO DE MARCA',
+
+      five_title: 'Esteña Consultores',
+      five_subtitle: 'DISEÑO DE MARCA',
+
+      prev: 'Anterior',
+      next: 'Siguiente',
     },
     team: {
       kicker: 'Nuestro equipo',
@@ -374,6 +399,30 @@ const messages = {
     social: {
       instagram: 'Instagram',
       behance: 'Behance',
+    },
+    tab_works: {},
+    tab_contact: {
+      header: {
+        title: 'Agende su reunion',
+        tab_a: 'Inicio',
+        tab_b: 'Contacto',
+      },
+      address_info: {
+        address: 'Direccion',
+        info_address: 'Miami Boulevard 2 Punta del Este, Uruguay',
+        email: 'correo',
+        info_email: 'hello@magnocreative.es',
+      },
+      send_message_info: {
+        sub_title: 'Vamos a charlar',
+        title_a: 'Enviar un',
+        title_b: 'Mensaje',
+        name: 'Nombre',
+        email: 'Correo',
+        subject: 'Motivo de contacto',
+        message: 'Mensaje que desea comunicarnos',
+        cta: 'Conversemos',
+      },
     },
   },
 } as const;

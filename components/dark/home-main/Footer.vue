@@ -7,7 +7,7 @@
         <h2 id="footer-heading" class="footer__title">
           <a href="/home/contact" class="footer__titleLink">
             <span>{{ t('footer.cta_title') }}</span>
-            <span class="ml-30 fz-70 ti-arrow-top-right"></span>
+            <span class="fz-70 ti-arrow-top-right"></span>
           </a>
         </h2>
       </div>
@@ -69,8 +69,8 @@ onMounted(() => {
   position: relative;
   overflow: hidden;
   color: #fff;
-  background: #000;
-  background-image: url('/dark/assets/imgs/header/bg1.jpg');
+  background: #555;
+  background-color: #555;
   background-size: cover;
   background-position: center;
 }

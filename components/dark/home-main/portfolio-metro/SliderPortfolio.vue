@@ -4,56 +4,32 @@
       <div class="swiper-container">
         <Swiper v-bind="swiperGalleryImageOptions">
           <SwiperSlide>
-            <div
-              class="bg-img"
-              data-background="/dark/assets/imgs/slider-service/beru.jpg"
-              data-overlay-dark="3"
-            >
+            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/beru/beru.jpg"
+              data-overlay-dark="3">
               <a href="/home/works"></a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div
-              class="bg-img"
-              data-background="/dark/assets/imgs/slider-service/urban-presentacion.png"
-              data-overlay-dark="3"
-            >
+            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/urban-code/post.png"
+              data-overlay-dark="3">
               <a href="/home/works"></a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div
-              class="bg-img"
-              data-background="/dark/assets/imgs/works/full/3.jpg"
-              data-overlay-dark="3"
-            >
+            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/beru/beru_web.jpg"
+              data-overlay-dark="3">
               <a href="/home/works"></a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div
-              class="bg-img"
-              data-background="/dark/assets/imgs/works/full/4.jpg"
-              data-overlay-dark="3"
-            >
+            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/pachu/pachu-mock.jpg"
+              data-overlay-dark="3">
               <a href="/home/works"></a>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div
-              class="bg-img"
-              data-background="/dark/assets/imgs/works/full/5.jpg"
-              data-overlay-dark="3"
-            >
-              <a href="/home/works"></a>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div
-              class="bg-img"
-              data-background="/dark/assets/imgs/works/full/6.jpg"
-              data-overlay-dark="3"
-            >
+            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/esteña/esteña-redes.jpg"
+              data-overlay-dark="3">
               <a href="/home/works"></a>
             </div>
           </SwiperSlide>
@@ -62,57 +38,47 @@
     </div>
     <div class="gallery-text">
       <div class="swiper-container">
-        <Swiper
-          v-bind="swiperGalleryTextOptions"
-          class="swiper-container swiper-container-initialized swiper-container-horizontal"
-        >
+        <Swiper v-bind="swiperGalleryTextOptions"
+          class="swiper-container swiper-container-initialized swiper-container-horizontal">
           <SwiperSlide>
             <div class="text cursor-pointer">
               <h6>
-                <span> MVP Product Development</span>
+                <span>{{ t('works.one_subtitle') }}</span>
               </h6>
-              <h4 class="f-bold">Beru AI</h4>
+              <h4 class="f-bold">{{ t('works.one_title') }}</h4>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div class="text cursor-pointer">
               <h6>
-                <span> Branding Design</span>
+                <span>{{ t('works.two_subtitle') }}</span>
               </h6>
-              <h4 class="f-bold">Urban Code</h4>
+              <h4 class="f-bold">{{ t('works.two_title') }}</h4>
             </div>
           </SwiperSlide>
 
           <SwiperSlide>
             <div class="text cursor-pointer">
               <h6>
-                <span> Digital Design</span>
+                <span>{{ t('works.three_subtitle') }}</span>
               </h6>
-              <h4 class="f-bold">Avocado Cutter</h4>
+              <h4 class="f-bold">{{ t('works.three_title') }}</h4>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div class="text cursor-pointer">
               <h6>
-                <span> Digital Design</span>
+                <span>{{ t('works.four_subtitle') }}</span>
               </h6>
-              <h4 class="f-bold">Avocado Cutter</h4>
+              <h4 class="f-bold">{{ t('works.four_title') }}</h4>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div class="text cursor-pointer">
               <h6>
-                <span> Digital Design</span>
+                <span>{{ t('works.five_subtitle') }}</span>
               </h6>
-              <h4 class="f-bold">Avocado Cutter</h4>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="text cursor-pointer">
-              <h6>
-                <span> Product Development</span>
-              </h6>
-              <h4 class="f-bold">Beru AI</h4>
+              <h4 class="f-bold">{{ t('works.five_title') }}</h4>
             </div>
           </SwiperSlide>
         </Swiper>
@@ -121,7 +87,7 @@
     <div class="swiper-controls">
       <div class="swiper-button-next swiper-nav-ctrl cursor-pointer">
         <div>
-          <span>Next Slide</span>
+          <span>{{ t('works.next') }}</span>
         </div>
         <div>
           <i class="fas fa-chevron-right"></i>
@@ -132,7 +98,7 @@
           <i class="fas fa-chevron-left"></i>
         </div>
         <div>
-          <span>Prev Slide</span>
+          <span>{{ t('works.prev') }}</span>
         </div>
       </div>
     </div>
@@ -146,6 +112,9 @@ import loadBackgroudImages from '@/common/loadBackgroudImages';
 import { ref, onMounted, watch } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Keyboard, Mousewheel, Pagination, Thumbs } from 'swiper';
+import { useI18n } from '@/i18n';
+
+const { t } = useI18n();
 
 onMounted(() => {
   loadBackgroudImages();

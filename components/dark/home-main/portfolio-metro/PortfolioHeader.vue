@@ -6,11 +6,11 @@
   >
     <div class="container pt-100">
       <div class="text-center">
-        <h1 class="fz-100">Our Magic</h1>
+        <h1 class="fz-100">{{ t('portfolio.title') }}</h1>
         <div class="mt-15">
-          <a href="/">Home</a>
+          <a href="/">{{ t('portfolio.tab_a') }}</a>
           <span class="padding-rl-20">|</span>
-          <span class="main-color">Works</span>
+          <span class="main-color">{{ t('portfolio.tab_b') }}</span>
         </div>
       </div>
     </div>
@@ -19,6 +19,8 @@
 
 <script setup>
 import loadBackgroudImages from '@/common/loadBackgroudImages';
+import { useI18n } from '@/i18n';
+const { t } = useI18n();
 
 onMounted(() => {
   loadBackgroudImages();
