@@ -58,10 +58,8 @@ const messages = {
       },
     },
     services2: {
-      eyebrow: 'Our Specialize',
-      title_a: 'Comprehensive',
-      title_b: 'Services.',
-      read_more: 'Read More',
+      eyebrow: 'Know About',
+      title: 'Our Services',
     },
     servicesTabs: {
       eyebrow: 'Who we are?',
@@ -269,10 +267,8 @@ const messages = {
       },
     },
     services2: {
-      eyebrow: 'Nos especializamos en',
-      title_a: 'Servicios',
-      title_b: 'integrales.',
-      read_more: 'Ver más',
+      eyebrow: 'Así te ayudamos',
+      tittle: 'Identidad, Web & Growth',
     },
     servicesTabs: {
       eyebrow: '¿Quiénes somos?',
@@ -352,6 +348,11 @@ const messages = {
       tab_a: 'Inicio',
       tab_b: 'Proyectos',
     },
+    slider: {
+      eyebrow: 'Lo que hacemos',
+      tittle:  'Diseños que venden & Webs que convierten',
+      subcopy: 'Una muestra de cómo trabajamos',
+    },
     works: {
       one_title: 'Beru AI',
       one_subtitle: 'DESARROLLO DE PRODUCTO MVP',
@@ -384,7 +385,8 @@ const messages = {
       success: '¡Gracias! Te responderemos muy pronto.',
     },
     footer: {
-      cta_title: 'Contactenos',
+      cta_subtitle: 'Hablemos hoy',
+      cta_title: 'Contáctenos',
       address_label: 'Dirección',
       address_line1: 'Miami Boulevard 2',
       address_line2: 'Punta del Este, Uruguay',

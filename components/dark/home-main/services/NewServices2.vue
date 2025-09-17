@@ -2,14 +2,13 @@
   <section class="services-boxs section-padding">
     <div class="container">
       <div class="sec-head mb-80">
-        <h6 class="sub-title main-color mb-25">{{ t('portfolio.kicker') }}</h6>
-
-        <div class="bord pt-25 bord-thin-top d-flex align-items-center">
-          <h2 class="fw-600 text-u ls1">
-            {{ t('portfolio.title_a') }}
-            <span class="fw-200">{{ t('portfolio.title_b') }}</span>
+        <h6 class="sub-title main-color mb-10">{{ t('services2.eyebrow') }}</h6>
+        <div class="d-flex align-items-center">
+          <h2 class="fw-600">
+            {{ t('services2.tittle') }}
           </h2>
         </div>
+        <div class="bord mt-10 pb-0 bord-thin-top d-flex align-items-center" />
       </div>
 
       <div class="row pt-30">

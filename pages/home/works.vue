@@ -9,6 +9,7 @@
       <main class="main-bg">
         <Header />
         <Portfolio />
+        <WhatsAppFloat />
       </main>
       <Footer />
     </div>
@@ -24,6 +25,7 @@ import Navbar from '@/components/dark/home-main/Navbar';
 import Header from '@/components/dark/home-main/portfolio-metro/PortfolioHeader';
 import Portfolio from '@/components/dark/home-main/portfolio-metro/Portfolio';
 import Footer from '@/components/dark/home-main/Footer';
+import WhatsAppFloat from '~/components/dark/home-main/WhatsAppFloat.vue';
 
 useHead({
   link: [

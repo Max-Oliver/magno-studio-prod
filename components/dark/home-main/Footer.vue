@@ -3,6 +3,12 @@
     <div class="footer__overlay"></div>
 
     <div class="footer__container">
+      <div class="sec-head">
+        <h6 class="sub-title main-color mb-25">{{ t('footer.cta_subtitle') }}</h6>
+        <div class="bord pt-10 bord-thin-top d-flex align-items-center">
+  
+        </div>
+      </div>
       <div class="footer__cta">
         <h2 id="footer-heading" class="footer__title">
           <a href="/home/contact" class="footer__titleLink">
@@ -35,12 +41,12 @@
         <nav :aria-label="t('footer.aria_social')">
           <ul class="menu-col">
             <li>
-              <a class="u-underline" href="https://instagram.com/magnocreative" target="_blank" rel="noreferrer">
+              <a class="u-underline" href="https://www.instagram.com/magnocreativee/" target="_blank" rel="noreferrer">
                 {{ t('social.instagram') }}
               </a>
             </li>
             <li>
-              <a class="u-underline" href="https://behance.net/magnocreative" target="_blank" rel="noreferrer">
+              <a class="u-underline" href="https://behance.net/magnocreativee" target="_blank" rel="noreferrer">
                 {{ t('social.behance') }}
               </a>
             </li>
@@ -65,28 +71,22 @@ onMounted(() => {
 </script>
 
 <style scoped>
+
 .footer {
   position: relative;
   overflow: hidden;
   color: #fff;
-  background: #555;
-  background-color: #555;
+  background-color: #1a1a1a;
   background-size: cover;
   background-position: center;
-}
-
-.footer__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  pointer-events: none;
 }
 
 .footer__container {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem 2.5rem;
+  padding: 0 1rem 2.5rem;
+  padding-top: 2.5rem;
 }
 
 .footer__cta {
@@ -135,6 +135,7 @@ onMounted(() => {
 
 .footer__titleLink:hover .footer__arrow {
   transform: translate(4px, -4px);
+  color:dodgerblue
 }
 
 .footer__grid {

@@ -17,8 +17,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div v-for="(item, i) in data" :key="i" class="col-lg-4">
+      <div class="row justify-content-lg-center">
+        <div v-for="(item, i) in data" :key="i" class="col-12 col-md-6 col-lg-4">
           <div class="item md-mb50">
             <div class="img">
               <img :src="item.img" alt="" class="size_images" />
@@ -59,8 +59,28 @@ const { t } = useI18n();
 .container-bottom {
  margin-bottom: -50px;
 }
-.size_images {
-  height: 450px;
+/* Contenedor de la imagen */
+.team .item .img{
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* Imagen */
+.size_images{
+  width: 100%;
+  height: 450px;     /* desktop */
+  object-fit: cover; /* <- evita estiramiento */
+  object-position: center;
+  display: block;
+}
+
+/* Mobile */
+@media (hover:none), (pointer:coarse){
+  .size_images{
+    height: 360px;   /* mantén alto consistente en mobile */
+    object-fit: cover;
+  }
 }
 
 /* ----- MOBILE / TOUCH ----- */

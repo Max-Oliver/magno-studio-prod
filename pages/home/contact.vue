@@ -10,6 +10,7 @@
         <Header />
         <Contact />
         <Map />
+        <WhatsAppFloat />
       </main>
       <Footer />
     </div>
@@ -26,6 +27,7 @@ import Header from '@/components/dark/home-main/contact/Header';
 import Map from '@/components/dark/home-main/contact/Map';
 import Navbar from '@/components/dark/home-main/Navbar';
 import { onMounted } from 'vue';
+import WhatsAppFloat from '~/components/dark/home-main/WhatsAppFloat.vue';
 
 useHead({
   link: [

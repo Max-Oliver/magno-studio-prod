@@ -8,14 +8,12 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li @mousemove="handleDropdownMouseMove" @mouseleave="handleDropdownMouseLeave" class="nav-item dropdown">
-            <a class="nav-link" href="/" role="button" aria-haspopup="true"
-              aria-expanded="false">
+            <a class="nav-link" href="/" role="button" aria-haspopup="true" aria-expanded="false">
               <span class="rolling-text">{{ t('nav.home') }}</span>
             </a>
           </li>
           <li @mousemove="handleDropdownMouseMove" @mouseleave="handleDropdownMouseLeave" class="nav-item dropdown">
-            <a class="nav-link" href="/home/works" role="button"
-              aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" href="/home/works" role="button" aria-haspopup="true" aria-expanded="false">
               <span class="rolling-text">{{ t('nav.works') }}</span>
             </a>
           </li>
@@ -28,17 +26,17 @@
       </div>
 
       <div class="topnav flex items-center gap-1">
-        <!-- Botón de idioma -->
-        <div class="lang-toggle mt-3 cursor-pointer gap-1" @click="setLocale(current === 'es' ? 'en' : 'es')"
+        <!-- Botón de idioma
+        <div class="lang-toggle mt-3 cursor-pointer gap-1" @click="setLocale('es'/*current === 'es' ? 'en' : 'es'*/)"
           :aria-label="`Cambiar idioma a ${current === 'es' ? 'Inglés' : 'Español'
             }`">
-          <!-- Flag segun locale -->
+           Flag segun locale
           <span :class="['fi', current === 'es' ? 'fi-uy h-3' : 'fi-us']"></span>
           <span class="text-xs rolling-text cursor-pointer">
             {{ current === 'es' ? 'Esp' : 'Eng' }}
           </span>
         </div>
-
+      -->
         <!-- Menú (hamburguesa) -->
         <div @click="toggleMenu" class="menu-icon cursor-pointer">
           <span class="icon ti-align-right"></span>
@@ -147,6 +145,7 @@
 import { useI18n } from '@/i18n';
 const { current, setLocale, t } = useI18n();
 
+setLocale('es');
 import { onMounted, onUnmounted, computed } from 'vue';
 import { ref } from 'vue';
 import { useWhatsapp } from '../../../common/useWhatsapp'
@@ -261,30 +260,6 @@ function toggleSubMenu(event: any) {
         subMenu.style.maxHeight = '450px';
         subMenu.previousElementSibling.children[0].classList.add('dopen');
       }
-    }
-  }
-}
-function toggleSubMenu2(event: any) {
-  const SubMenu2 = event.currentTarget.querySelector('.sub-menu2');
-  if (SubMenu2) {
-    if (SubMenu2.classList.contains('sub-open')) {
-      event.currentTarget.querySelectorAll('.sub-menu2').forEach((item: any) => {
-        item.classList.remove('sub-open');
-        item.style.maxHeight = '0';
-        item.previousElementSibling.children[0].classList.remove('dopen');
-      });
-      SubMenu2.classList.remove('sub-open');
-      SubMenu2.style.maxHeight = '0';
-      SubMenu2.previousElementSibling.children[0].classList.remove('dopen');
-    } else if (!SubMenu2.classList.contains('sub-open')) {
-      event.currentTarget.querySelectorAll('.sub-menu2').forEach((item: any) => {
-        item.classList.remove('sub-open');
-        item.style.maxHeight = '0';
-        item.previousElementSibling.children[0].classList.remove('dopen');
-      });
-      SubMenu2.classList.add('sub-open');
-      SubMenu2.style.maxHeight = '450px';
-      SubMenu2.previousElementSibling.children[0].classList.add('dopen');
     }
   }
 }

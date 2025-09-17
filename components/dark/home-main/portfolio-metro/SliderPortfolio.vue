@@ -1,109 +1,125 @@
 <template>
-  <header class="header half-slider">
-    <div class="gallery-img">
-      <div class="swiper-container">
-        <Swiper v-bind="swiperGalleryImageOptions">
-          <SwiperSlide>
-            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/beru/beru.jpg"
-              data-overlay-dark="3">
-              <a href="/home/works"></a>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/urban-code/post.png"
-              data-overlay-dark="3">
-              <a href="/home/works"></a>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/beru/beru_web.jpg"
-              data-overlay-dark="3">
-              <a href="/home/works"></a>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/pachu/pachu-mock.jpg"
-              data-overlay-dark="3">
-              <a href="/home/works"></a>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/esteña/esteña-redes.jpg"
-              data-overlay-dark="3">
-              <a href="/home/works"></a>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </div>
-    <div class="gallery-text">
-      <div class="swiper-container">
-        <Swiper v-bind="swiperGalleryTextOptions"
-          class="swiper-container swiper-container-initialized swiper-container-horizontal">
-          <SwiperSlide>
-            <div class="text cursor-pointer">
-              <h6>
-                <span>{{ t('works.one_subtitle') }}</span>
-              </h6>
-              <h4 class="f-bold">{{ t('works.one_title') }}</h4>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="text cursor-pointer">
-              <h6>
-                <span>{{ t('works.two_subtitle') }}</span>
-              </h6>
-              <h4 class="f-bold">{{ t('works.two_title') }}</h4>
-            </div>
-          </SwiperSlide>
+  <div class="">
+    <div class="sec-head ml-60 mr-60 mb-80">
+      <h6 class="sub-title main-color mb-10">{{ t('slider.eyebrow') }}</h6>
+      <div class="d-flex align-items-center">
+        <h2 class="fw-600">
+          {{ t('slider.tittle') }}
+        </h2>
 
-          <SwiperSlide>
-            <div class="text cursor-pointer">
-              <h6>
-                <span>{{ t('works.three_subtitle') }}</span>
-              </h6>
-              <h4 class="f-bold">{{ t('works.three_title') }}</h4>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="text cursor-pointer">
-              <h6>
-                <span>{{ t('works.four_subtitle') }}</span>
-              </h6>
-              <h4 class="f-bold">{{ t('works.four_title') }}</h4>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div class="text cursor-pointer">
-              <h6>
-                <span>{{ t('works.five_subtitle') }}</span>
-              </h6>
-              <h4 class="f-bold">{{ t('works.five_title') }}</h4>
-            </div>
-          </SwiperSlide>
-        </Swiper>
       </div>
+      <p v-if="t('slider.subcopy')" class="mt-12 opacity-70">
+        {{ t('slider.subcopy') }}
+      </p>
+      <div class="bord mt-10 pb-0 bord-thin-top d-flex align-items-center" />
     </div>
-    <div class="swiper-controls">
-      <div class="swiper-button-next swiper-nav-ctrl cursor-pointer">
-        <div>
-          <span>{{ t('works.next') }}</span>
-        </div>
-        <div>
-          <i class="fas fa-chevron-right"></i>
+
+    <header class="header half-slider">
+      <div class="gallery-img">
+        <div class="swiper-container">
+          <Swiper v-bind="swiperGalleryImageOptions">
+            <SwiperSlide>
+              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/beru/beru.jpg"
+                data-overlay-dark="3">
+                <a href="/home/works"></a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/urban-code/desktop/slider-2.jpg"
+                data-overlay-dark="3">
+                <a href="/home/works"></a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/beru/beru-web.jpg"
+                data-overlay-dark="3">
+                <a href="/home/works"></a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/pachu/desktop/slider.jpg"
+                data-overlay-dark="3">
+                <a href="/home/works"></a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/esteña/esteña-redes.jpg"
+                data-overlay-dark="3">
+                <a href="/home/works"></a>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
-      <div class="swiper-button-prev swiper-nav-ctrl cursor-pointer">
-        <div>
-          <i class="fas fa-chevron-left"></i>
-        </div>
-        <div>
-          <span>{{ t('works.prev') }}</span>
+      <div class="gallery-text">
+        <div class="swiper-container">
+          <Swiper v-bind="swiperGalleryTextOptions"
+            class="swiper-container swiper-container-initialized swiper-container-horizontal">
+            <SwiperSlide>
+              <div class="text cursor-pointer">
+                <h6>
+                  <span>{{ t('works.one_subtitle') }}</span>
+                </h6>
+                <h4 class="f-bold">{{ t('works.one_title') }}</h4>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="text cursor-pointer">
+                <h6>
+                  <span>{{ t('works.two_subtitle') }}</span>
+                </h6>
+                <h4 class="f-bold">{{ t('works.two_title') }}</h4>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div class="text cursor-pointer">
+                <h6>
+                  <span>{{ t('works.three_subtitle') }}</span>
+                </h6>
+                <h4 class="f-bold">{{ t('works.three_title') }}</h4>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="text cursor-pointer">
+                <h6>
+                  <span>{{ t('works.four_subtitle') }}</span>
+                </h6>
+                <h4 class="f-bold">{{ t('works.four_title') }}</h4>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div class="text cursor-pointer">
+                <h6>
+                  <span>{{ t('works.five_subtitle') }}</span>
+                </h6>
+                <h4 class="f-bold">{{ t('works.five_title') }}</h4>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </header>
+      <div class="swiper-controls">
+        <div class="swiper-button-next swiper-nav-ctrl cursor-pointer">
+          <div>
+            <span>{{ t('works.next') }}</span>
+          </div>
+          <div>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-nav-ctrl cursor-pointer">
+          <div>
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div>
+            <span>{{ t('works.prev') }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </header>
+  </div>
 </template>
 
 <script setup>
