@@ -9,7 +9,7 @@
         <SwiperSlide>
           <div
             class="bg-img valign"
-            data-background="/dark/assets/imgs/header/full/1.jpg"
+            data-background="/dark/assets/imgs/header/home-main/home-alta.jpg"
             data-overlay-dark="4"
           >
             <div class="container">

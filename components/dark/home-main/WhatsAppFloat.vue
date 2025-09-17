@@ -1,15 +1,8 @@
 <template>
   <Teleport to="body">
-    <a
-      :href="whatsappUrl"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Contactar por WhatsApp"
-      class="whatsapp-fab fixed transition-transform duration-300 hover:scale-110"
-      :class="bgClass"
-      :style="styleOffsets"
-      :data-visible="isVisible"
-    >
+    <a :href="whatsappUrl" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"
+      class="whatsapp-fab fixed transition-transform duration-300 hover:scale-110" :class="bgClass"
+      :style="styleOffsets" :data-visible="isVisible">
       <MessageCircle :size="28" />
     </a>
   </Teleport>
@@ -77,36 +70,57 @@ const styleOffsets = computed(() => {
 
   return {
     position: 'fixed',
-    bottom,
-    right,
-    left,
+    // variables que podremos overridear en media query
+    '--fab-bottom': bottom,
+    '--fab-right': right,
+    '--fab-left': left,
+    bottom: 'var(--fab-bottom)',
+    right: 'var(--fab-right)',
+    left: 'var(--fab-left)',
     zIndex: String(props.zIndex)
   } as Record<string, string | undefined>
 })
-
 const bgClass = computed(() => props.bgClass)
 </script>
 
 <style>
-.whatsapp-fab{
-  width: 56px; height: 56px;
+.whatsapp-fab {
+  width: 56px;
+  height: 56px;
   border-radius: 9999px;
-  display: grid; place-items: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
 }
 
 /* ocultamiento suave cuando se cruza con #contacto */
-.whatsapp-fab[data-visible="false"]{
+.whatsapp-fab[data-visible="false"] {
   opacity: .0;
   pointer-events: none;
   transform: translateY(8px) scale(.96);
 }
 
 /* por si algún overlay intenta taparlo */
-.whatsapp-fab { will-change: transform; }
-@media (prefers-reduced-motion: reduce){
-  .whatsapp-fab{ transition: none !important; }
+.whatsapp-fab {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-fab {
+    transition: none !important;
+  }
+}
+
+/* tamaño y alineación en mobile */
+@media (max-width: 640px) {
+  .whatsapp-fab {
+    /* pisa las variables definidas inline */
+    --fab-bottom: calc(env(safe-area-inset-bottom, 0px) + 80px) !important;
+    --fab-right: calc(env(safe-area-inset-right, 0px) + 10px) !important;
+    /* si en vez de right usás left, podés setear --fab-left aquí */
+    /* --fab-left: calc(env(safe-area-inset-left, 0px) + 15px) !important; */
+  }
 }
 </style>

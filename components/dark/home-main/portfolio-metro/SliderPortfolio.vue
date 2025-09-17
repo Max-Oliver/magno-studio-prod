@@ -19,32 +19,33 @@
         <div class="swiper-container">
           <Swiper v-bind="swiperGalleryImageOptions">
             <SwiperSlide>
-              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/beru/beru.jpg"
-                data-overlay-dark="3">
+              <div class="bg-img" data-bg-desktop="/dark/assets/imgs/portfolio-slider/beru/beru.jpg"
+                data-bg-mobile="/dark/assets/imgs/portfolio-slider/beru/beru.jpg" data-overlay-dark="6">
                 <a href="/home/works"></a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/urban-code/desktop/slider-2.jpg"
-                data-overlay-dark="3">
+              <div class="bg-img" data-bg-desktop="/dark/assets/imgs/portfolio-slider/urban-code/desktop/slider-2.jpg"
+                data-bg-mobile="/dark/assets/imgs/portfolio-slider/urban-code/mobile/mock-2.jpg" data-overlay-dark="3">
                 <a href="/home/works"></a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/beru/beru-web.jpg"
-                data-overlay-dark="3">
+              <div class="bg-img" data-bg-desktop="/dark/assets/imgs/portfolio-slider/beru/beru-web.jpg"
+                data-bg-mobile="/dark/assets/imgs/portfolio-slider/beru/beru-web.jpg" data-overlay-dark="3">
                 <a href="/home/works"></a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/pachu/desktop/slider.jpg"
-                data-overlay-dark="3">
+              <div class="bg-img" data-bg-desktop="/dark/assets/imgs/portfolio-slider/pachu/desktop/slider.jpg"
+                data-bg-mobile="/dark/assets/imgs/portfolio-slider/pachu/mobile/12.jpg"
+                data-overlay-dark="4">
                 <a href="/home/works"></a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="bg-img" data-background="/dark/assets/imgs/portfolio-slider/esteña/esteña-redes.jpg"
-                data-overlay-dark="3">
+              <div class="bg-img" data-bg-desktop="/dark/assets/imgs/portfolio-slider/esteña/desktop/feed-desktop.jpg"
+                data-bg-mobile="/dark/assets/imgs/portfolio-slider/esteña/mobile/full-feed.jpg" data-overlay-dark="6">
                 <a href="/home/works"></a>
               </div>
             </SwiperSlide>
@@ -233,3 +234,36 @@ watch([galleryImg, galleryText], () => {
   }
 });
 </script>
+
+<style scoped>
+/* Mobile: ≤ 640px */
+@media (max-width: 640px) {
+  .half-slider .sec-head {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-bottom: 48px !important;
+  }
+
+  .half-slider .sec-head h2 {
+    /* tamaño/line-height más cómodo en pantallas chicas */
+    font-size: clamp(28px, 7vw, 36px);
+    line-height: 1.15;
+  }
+
+  .half-slider .sec-head .sub-title {
+    margin-bottom: 8px;
+  }
+
+  .half-slider .sec-head .bord {
+    margin-top: 12px;
+  }
+}
+
+/* XS: ≤ 380px (opcional) */
+@media (max-width: 380px) {
+  .half-slider .sec-head {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+}
+</style>

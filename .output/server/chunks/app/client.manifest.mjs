@@ -1,37 +1,47 @@
 const client_manifest = {
-  "_Navbar.!~{008}~.js": {
+  "_WhatsAppFloat.vue.!~{009}~.js": {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "Navbar.C52fff3I.css",
-    "src": "_Navbar.!~{008}~.js"
+    "file": "WhatsAppFloat.Df-Z3Jqe.css",
+    "src": "_WhatsAppFloat.vue.!~{009}~.js"
   },
-  "_Navbar.BebahPvw.js": {
+  "_WhatsAppFloat.vue.CHhinAKt.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "css": [
-      "Navbar.C52fff3I.css"
+      "WhatsAppFloat.Df-Z3Jqe.css"
     ],
-    "file": "Navbar.BebahPvw.js",
+    "file": "WhatsAppFloat.vue.CHhinAKt.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "__plugin-vue_export-helper.cJ9gEVAG.js"
+      "__plugin-vue_export-helper.BLdfkdku.js"
     ]
   },
-  "Navbar.C52fff3I.css": {
-    "file": "Navbar.C52fff3I.css",
+  "WhatsAppFloat.Df-Z3Jqe.css": {
+    "file": "WhatsAppFloat.Df-Z3Jqe.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
   },
-  "__plugin-vue_export-helper.cJ9gEVAG.js": {
+  "__plugin-vue_export-helper.BLdfkdku.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "_plugin-vue_export-helper.cJ9gEVAG.js",
+    "file": "_plugin-vue_export-helper.BLdfkdku.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_nuxt-link.99qFj2vp.js": {
+    "resourceType": "script",
+    "module": true,
+    "prefetch": true,
+    "preload": true,
+    "file": "nuxt-link.99qFj2vp.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -42,10 +52,11 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.BPLGnvxs.js",
+    "file": "error-404.De3kSGtI.js",
     "imports": [
-      "node_modules/nuxt/dist/app/entry.js",
-      "__plugin-vue_export-helper.cJ9gEVAG.js"
+      "_nuxt-link.99qFj2vp.js",
+      "__plugin-vue_export-helper.BLdfkdku.js",
+      "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"
@@ -62,9 +73,9 @@ const client_manifest = {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.ChntHN7g.js",
+    "file": "error-500.BuCjPhnc.js",
     "imports": [
-      "__plugin-vue_export-helper.cJ9gEVAG.js",
+      "__plugin-vue_export-helper.BLdfkdku.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -1079,7 +1090,7 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.BTQUdyNj.js",
+    "file": "entry.CyBd7rUw.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
@@ -1092,10 +1103,10 @@ const client_manifest = {
     "css": [
       "contact.vPYeVAZe.css"
     ],
-    "file": "contact.B3Vt6LAQ.js",
+    "file": "contact.D9w60mO4.js",
     "imports": [
-      "__plugin-vue_export-helper.cJ9gEVAG.js",
-      "_Navbar.BebahPvw.js",
+      "__plugin-vue_export-helper.BLdfkdku.js",
+      "_WhatsAppFloat.vue.CHhinAKt.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -1112,28 +1123,47 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "works.DocXErRp.js",
+    "css": [
+      "works.Bj-xyaaE.css"
+    ],
+    "file": "works.CiibQCVF.js",
     "imports": [
-      "__plugin-vue_export-helper.cJ9gEVAG.js",
-      "_Navbar.BebahPvw.js",
+      "__plugin-vue_export-helper.BLdfkdku.js",
+      "_WhatsAppFloat.vue.CHhinAKt.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/home/works.vue"
+  },
+  "works.Bj-xyaaE.css": {
+    "file": "works.Bj-xyaaE.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
   },
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index.CFqARaQV.js",
+    "css": [
+      "index.DCMOWG9-.css"
+    ],
+    "file": "index.CerDF70j.js",
     "imports": [
-      "__plugin-vue_export-helper.cJ9gEVAG.js",
-      "_Navbar.BebahPvw.js",
-      "node_modules/nuxt/dist/app/entry.js"
+      "__plugin-vue_export-helper.BLdfkdku.js",
+      "_WhatsAppFloat.vue.CHhinAKt.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_nuxt-link.99qFj2vp.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
+  },
+  "index.DCMOWG9-.css": {
+    "file": "index.DCMOWG9-.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
   }
 };
 

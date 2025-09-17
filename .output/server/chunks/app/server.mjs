@@ -629,7 +629,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/contact-7k6RtP-H.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/contact-DTfWqKXt.mjs').then((m) => m.default || m)
   },
   {
     name: "home-works",
@@ -637,7 +637,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/works-C2JAyXqj.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/works-TND5y3EE.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -645,7 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/index-DvTMdC7Y.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-DEtVj3YJ.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1109,11 +1109,13 @@ const messages = {
       right: "CREATIVE STUDIO"
     },
     // en messages.en
-    hero: {
-      line_1: "We create",
-      line_2: "impactful",
-      line_3: "digital experiences",
-      paragraph: "We combine forward-thinking design with modern technology to tell stories that transform and grow our partners’ brands."
+    heroSlides: {
+      s1: { h2: "We Create", h1: "Awesome Design" },
+      // (corregí "Awoseme" -> Awesome)
+      s2: { h2: "We Create Impactful", h1: "Digital Experiences" },
+      s3: { h2: "Elevate your", h1: "Brand & Fuel Growth" },
+      prev: "Prev",
+      next: "Next"
     },
     // EN
     intro: {
@@ -1121,8 +1123,8 @@ const messages = {
       headline_2: "meaningful digital project you can easily",
       headline_3: "reach us by clicking",
       headline_cta: "here",
-      years_label: "Years of Experience",
-      years_amount: "3",
+      //  years_label: 'Years of Experience',
+      // years_amount: '3',
       paragraph: "Whether you are a development agency looking to outsource design work, a company in search of a Product Designer or Product Team, a marketing agency that needs a landing page, a startup that wants to launch an app, or an enterprise that plans to rebrand or redesign its website, we welcome any challenge with our arms wide open.",
       marquee: [
         "UI-UX Design",
@@ -1146,49 +1148,105 @@ const messages = {
       }
     },
     services2: {
-      eyebrow: "Our Specialize",
-      title_a: "Comprehensive",
-      title_b: "Services.",
-      read_more: "Read More"
+      eyebrow: "Know About",
+      title: "Our Services"
     },
-    services: {
-      title: "What we do",
+    servicesTabs: {
+      eyebrow: "Who we are?",
+      title: "The ultimate guide to marketing success.",
+      intro: "We shifted our talents to frontier science because we wanted our work to have tangible impact. We get front row seats to the future.",
+      cta: "Read More",
+      tabs: [
+        {
+          num: "01",
+          label: "About Us",
+          img: "/dark/assets/imgs/intro/03.jpg",
+          icon: "/dark/assets/imgs/serv-icons/0.png",
+          text: "We are a creative studio specializing in design, development and strategy across multiple disciplines to build exceptional digital experiences."
+        },
+        {
+          num: "02",
+          label: "Our Mission",
+          img: "/dark/assets/imgs/intro/02.jpg",
+          icon: "/dark/assets/imgs/serv-icons/1.png",
+          text: "We partner with brands to craft useful, beautiful and fast products that move the business forward with measurable outcomes."
+        },
+        {
+          num: "03",
+          label: "Our Vision",
+          img: "/dark/assets/imgs/intro/03.jpg",
+          icon: "/dark/assets/imgs/serv-icons/2.png",
+          text: "Design and technology working together to create memorable, accessible and scalable solutions that people love to use."
+        },
+        {
+          num: "04",
+          label: "Achievements",
+          img: "/dark/assets/imgs/intro/03.jpg",
+          icon: "/dark/assets/imgs/serv-icons/0.png",
+          text: "Selected projects, awards and case studies that reflect our commitment to quality, performance and brand impact."
+        }
+      ]
+    },
+    // EN
+    servicesBoxes: {
+      eyebrow: "Our Specialize",
+      title_a: "What We",
+      title_b: "Offer",
+      read_more: "Read More",
       list: [
         {
-          name: "Branding & Identity",
-          desc: "We build identities that connect with people and leave a mark."
+          titleA: "Branding",
+          titleB: "Design",
+          img: "/dark/assets/imgs/serv-icons/5.png",
+          desc: "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+          link: "/dark/page-services-details"
         },
         {
-          name: "Web & Digital Experiences",
-          desc: "From sleek websites to immersive platforms, we design with purpose and style."
+          titleA: "Graphic Design",
+          titleB: "& Social Media",
+          img: "/dark/assets/imgs/serv-icons/3.png",
+          desc: "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+          link: "/dark/page-services-details"
         },
         {
-          name: "Creative Strategy",
-          desc: "We align creativity with business goals to generate measurable results."
+          titleA: "MVP Product",
+          titleB: "Development",
+          img: "/dark/assets/imgs/serv-icons/5.png",
+          desc: "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+          link: "/dark/page-services-details"
+        },
+        {
+          titleA: "Web",
+          titleB: "Development",
+          img: "/dark/assets/imgs/serv-icons/4.png",
+          desc: "Live workshop where we define the main problems and challenges before building a strategic plan moving forward.",
+          link: "/dark/page-services-details"
         }
-      ],
-      cta: "View services"
+      ]
+    },
+    portfolio: {
+      title: "Our Works",
+      tab_a: "Home",
+      tab_b: "Works"
     },
     works: {
-      title: "Selected work",
-      subtitle: "A showcase of projects that merge design, technology, and storytelling.",
-      cta: "View all projects"
-    },
-    marquee: {
-      item_mvp: "MVP Product Design",
-      item_amazing: "Amazing Design",
-      item_visual_identity: "Visual Identity",
-      item_branding: "Branding Strategy",
-      item_saas: "SaaS Products",
-      item_web_dev: "Web Development",
-      item_ai: "AI Powered Design",
-      item_ai_agents: "AI Agents",
-      item_ai_automation: "AI Automations"
+      one_title: "Beru AI",
+      one_subtitle: "MVP PRODUCT DEVELOPMENT",
+      two_title: "Urban Code",
+      two_subtitle: "BRANDING DESIGN",
+      three_title: "Beru AI",
+      three_subtitle: "UI DESIGN",
+      four_title: "Pacho Café",
+      four_subtitle: "BRANDING DESIGN",
+      five_title: "Esteña Consultores",
+      five_subtitle: "BRANDING DESIGN",
+      prev: "Prev Slide",
+      next: "Next Slide"
     },
     team: {
       kicker: "Our Team",
       title_a: "Meet our",
-      title_b: "legends",
+      title_b: "founders",
       cta: "Join us"
     },
     contact: {
@@ -1214,6 +1272,29 @@ const messages = {
     social: {
       instagram: "Instagram",
       behance: "Behance"
+    },
+    tab_works: {},
+    tab_contact: {
+      header: {
+        title: "Contact Us",
+        tab_a: "Home",
+        tab_b: "Contact"
+      },
+      address_info: {
+        address: "address",
+        info_address: "Miami Boulevard 2 Punta del Este, Uruguay",
+        email: "Email",
+        info_email: "contact@magnocreative.com"
+      },
+      send_message_info: {
+        sub_title: "LET´S CHAT",
+        title: "SEND A MESSAGE",
+        name: "Name",
+        email: "Email",
+        subject: "Subject",
+        message: "Message",
+        cta: "Let´s Talk"
+      }
     }
   },
   es: {
@@ -1228,11 +1309,12 @@ const messages = {
       right: "ESTUDIO CREATIVO"
     },
     // en messages.es
-    hero: {
-      line_1: "Creamos",
-      line_2: "Experiencias",
-      line_3: "con impacto",
-      paragraph: "Combinamos diseño de vanguardia con tecnología moderna para contar historias que transforman y hacen crecer a nuestras marcas aliadas."
+    heroSlides: {
+      s1: { h2: "Creamos", h1: "Diseños Asombrosos" },
+      s2: { h2: "Creamos experiencias", h1: "Digitales con impacto" },
+      s3: { h2: "Elevá tu", h1: "Marca y acelera el crecimiento" },
+      prev: "Anterior",
+      next: "Siguiente"
     },
     // ES
     intro: {
@@ -1240,8 +1322,8 @@ const messages = {
       headline_2: "proyecto digital con sentido, podés",
       headline_3: "contactarnos haciendo clic",
       headline_cta: "aquí",
-      years_label: "Años de experiencia",
-      years_amount: "3",
+      // years_label: 'Años de experiencia',
+      // years_amount: '3',
       paragraph: "Ya seas una agencia de desarrollo que quiere tercerizar diseño, una empresa en busca de un Product Designer o un equipo de Producto, una agencia de marketing que necesita una landing, una startup que quiere lanzar una app o una compañía que planea rebranding o rediseño web, recibimos cada desafío con los brazos abiertos.",
       marquee: [
         "Diseño UI-UX",
@@ -1265,49 +1347,109 @@ const messages = {
       }
     },
     services2: {
-      eyebrow: "Nos especializamos en",
-      title_a: "Servicios",
-      title_b: "integrales.",
-      read_more: "Ver más"
+      eyebrow: "Así te ayudamos",
+      tittle: "Identidad, Web & Growth"
     },
-    services: {
-      title: "Qué hacemos",
+    servicesTabs: {
+      eyebrow: "¿Quiénes somos?",
+      title: "La guía definitiva para el éxito en marketing.",
+      intro: "Llevamos nuestros talentos a la frontera de la tecnología para generar impacto real. Así, vivimos en primera fila el futuro.",
+      cta: "Ver más",
+      tabs: [
+        {
+          num: "01",
+          label: "Sobre nosotros",
+          img: "/dark/assets/imgs/about-us/about_us_image.png",
+          icon: "/dark/assets/imgs/serv-icons/0.png",
+          text: "Somos un estudio creativo especializado en diseño, desarrollo y estrategia para construir experiencias digitales excepcionales."
+        },
+        {
+          num: "02",
+          label: "Nuestra misión",
+          img: "/dark/assets/imgs/intro/02.jpg",
+          icon: "/dark/assets/imgs/serv-icons/1.png",
+          text: "Trabajamos junto a marcas para crear productos útiles, bellos y rápidos que impulsen el negocio con resultados medibles."
+        },
+        {
+          num: "03",
+          label: "Nuestra visión",
+          img: "/dark/assets/imgs/intro/03.jpg",
+          icon: "/dark/assets/imgs/serv-icons/2.png",
+          text: "Diseño y tecnología en conjunto para crear soluciones memorables, accesibles y escalables que la gente ame usar."
+        },
+        {
+          num: "04",
+          label: "Logros",
+          img: "/dark/assets/imgs/intro/03.jpg",
+          icon: "/dark/assets/imgs/serv-icons/0.png",
+          text: "Proyectos, reconocimientos y casos de éxito que reflejan nuestro compromiso con la calidad, el performance y el impacto de marca."
+        }
+      ]
+    },
+    servicesBoxes: {
+      eyebrow: "Nos especializamos en",
+      title_a: "Qué",
+      title_b: "Ofrecemos",
+      read_more: "Ver más",
       list: [
         {
-          name: "Branding & Identidad",
-          desc: "Creamos identidades que conectan con las personas y dejan huella."
+          titleA: "Branding",
+          titleB: "& Identidad",
+          img: "/dark/assets/imgs/serv-icons/5.png",
+          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
+          link: "/dark/page-services-details"
         },
         {
-          name: "Web & Experiencias Digitales",
-          desc: "Desde sitios elegantes hasta plataformas inmersivas, diseñamos con propósito y estilo."
+          titleA: "Diseño Gráfico",
+          titleB: "y Social Media",
+          img: "/dark/assets/imgs/serv-icons/3.png",
+          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
+          link: "/dark/page-services-details"
         },
         {
-          name: "Estrategia Creativa",
-          desc: "Alineamos creatividad con objetivos de negocio para generar resultados medibles."
+          titleA: "Desarrollo",
+          titleB: "de MVP",
+          img: "/dark/assets/imgs/serv-icons/5.png",
+          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
+          link: "/dark/page-services-details"
+        },
+        {
+          titleA: "Desarrollo",
+          titleB: "Web",
+          img: "/dark/assets/imgs/serv-icons/4.png",
+          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
+          link: "/dark/page-services-details"
         }
-      ],
-      cta: "Ver servicios"
+      ]
+    },
+    portfolio: {
+      title: "Nuestro Catálogo",
+      tab_a: "Inicio",
+      tab_b: "Proyectos"
+    },
+    slider: {
+      eyebrow: "Lo que hacemos",
+      tittle: "Diseños que venden & Webs que convierten",
+      subcopy: "Una muestra de cómo trabajamos"
     },
     works: {
-      title: "Trabajos destacados",
-      subtitle: "Una muestra de proyectos que unen diseño, tecnología y storytelling.",
-      cta: "Ver todos los proyectos"
-    },
-    marquee: {
-      item_mvp: "Diseño de MVP",
-      item_amazing: "Diseño increíble",
-      item_visual_identity: "Identidad visual",
-      item_branding: "Estrategia de marca",
-      item_saas: "Productos SaaS",
-      item_web_dev: "Desarrollo web",
-      item_ai: "Diseño potenciado por IA",
-      item_ai_agents: "Agentes de IA",
-      item_ai_automation: "Automatizaciones con IA"
+      one_title: "Beru AI",
+      one_subtitle: "DESARROLLO DE PRODUCTO MVP",
+      two_title: "Urban Code",
+      two_subtitle: "DISEÑO DE MARCA",
+      three_title: "Beru AI",
+      three_subtitle: "DISEÑO UI",
+      four_title: "Pachu Café",
+      four_subtitle: "DISEÑO DE MARCA",
+      five_title: "Esteña Consultores",
+      five_subtitle: "DISEÑO DE MARCA",
+      prev: "Anterior",
+      next: "Siguiente"
     },
     team: {
       kicker: "Nuestro equipo",
-      title_a: "Conocé a nuestras",
-      title_b: "leyendas",
+      title_a: "Conocé a nuestros",
+      title_b: "Founders",
       cta: "Súmate"
     },
     contact: {
@@ -1317,7 +1459,8 @@ const messages = {
       success: "¡Gracias! Te responderemos muy pronto."
     },
     footer: {
-      cta_title: "Contactenos",
+      cta_subtitle: "Hablemos hoy",
+      cta_title: "Contáctenos",
       address_label: "Dirección",
       address_line1: "Miami Boulevard 2",
       address_line2: "Punta del Este, Uruguay",
@@ -1332,6 +1475,30 @@ const messages = {
     social: {
       instagram: "Instagram",
       behance: "Behance"
+    },
+    tab_works: {},
+    tab_contact: {
+      header: {
+        title: "Agende su reunion",
+        tab_a: "Inicio",
+        tab_b: "Contacto"
+      },
+      address_info: {
+        address: "Direccion",
+        info_address: "Miami Boulevard 2 Punta del Este, Uruguay",
+        email: "correo",
+        info_email: "hello@magnocreative.es"
+      },
+      send_message_info: {
+        sub_title: "Vamos a charlar",
+        title_a: "Enviar un",
+        title_b: "Mensaje",
+        name: "Nombre",
+        email: "Correo",
+        subject: "Motivo de contacto",
+        message: "Mensaje que desea comunicarnos",
+        cta: "Conversemos"
+      }
     }
   }
 };
@@ -1394,7 +1561,7 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404-C9w8gBlg.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404-DPGcHSjA.mjs').then((r) => r.default || r));
     const _Error = defineAsyncComponent(() => import('./_nuxt/error-500-C9B0FO9a.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
@@ -1475,5 +1642,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { useRuntimeConfig as a, navigateTo as b, createError as c, useI18n as d, entry$1 as default, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useRouter as u };
+export { useRouter as a, useRuntimeConfig as b, createError as c, navigateTo as d, entry$1 as default, injectHead as i, nuxtLinkDefaults as n, resolveUnrefHeadInput as r, useI18n as u };
 //# sourceMappingURL=server.mjs.map
