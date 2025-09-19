@@ -7,7 +7,7 @@
   <div id="smooth-wrapper">
     <div id="smooth-content">
       <main class="main-bg o-hidden">
-        <Header />
+        <Header :key="$route.fullPath" />
         <Intro />
         <Services />
         <Services2 />

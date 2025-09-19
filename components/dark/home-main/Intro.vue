@@ -17,44 +17,35 @@
               </span>
               <span class="sideup-text">
                 <span class="up-text">
-                  {{ t('intro.headline_3') }}
-                  <span class="underline">
-                    <a href="/home/contact" class="main-color">{{ t('intro.headline_cta') }}</a>
-                  </span>
+
+                  <div class="flex flex-wrap inline-flex items-center gap-2">
+                    <span class="">
+                      <a href="/home/contact" class="cta-underline cta-with-arrow">
+                        {{ t('intro.headline_cta') }}
+                        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="#38bdf8" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </span>
+                  </div>
+                  <!-- Micro-confianza -->
+                  <p class="mt-2 text-sm opacity-70">
+                    {{ t('intro.headline_micro') }}
+                  </p>
                 </span>
+
               </span>
             </h4>
-            <div class="exp mt-0 md-mb0">
-              <h2 class="">
-                <span class="fz-70 numb-font main-color">
-                  {{ t('intro.years_amount') }}
-                </span>
-                <span class="sub-title main-font opacity-7 ml-15">
-                  {{ t('intro.years_label') }}
-                </span>
-              </h2>
-            </div>
           </div>
         </div>
+
         <div class="col-lg-5">
           <div class="text">
             <p>
               {{ t('intro.paragraph') }}
             </p>
           </div>
-          <!-- <div class="main-marq o-hidden mt-100">
-            <div class="slide-har st1">
-              <div class="box" v-for="n in 2" :key="n">
-                <div class="item" v-for="(item, i) in marquee" :key="i">
-                  <h4 class="d-flex align-items-center">
-                    <span>{{ item }}</span>
-                    <span class="fz-50 ml-50 stroke icon">*</span>
-                  </h4>
-                </div>
-              </div>
-
-            </div>
-          </div> -->
         </div>
       </div>
     </div>
@@ -76,3 +67,130 @@ const { t } = useI18n();
 const headline = computed(() => t('intro.headline') as string[]);
 const marquee = computed(() => t('intro.marquee') as string[]);
 </script>
+
+<style>
+/* Azul de marca: cambiá a tu variable si ya la tenés */
+:root {
+  --brand: #38bdf8;
+}
+
+.cta-underline {
+  --c: var(--brand);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: color .25s ease;
+  background: linear-gradient(var(--c), var(--c)) left bottom/24% 2px no-repeat;
+  /* “sembrada” */
+}
+
+.cta-underline:hover,
+.cta-underline:focus-visible {
+  color: var(--c);
+  background-size: 100% 2px;
+}
+
+.cta-underline:active {
+  color: var(--c);
+  background-size: 100% 2px;
+}
+
+.cta-with-arrow .ico {
+  width: 18px;
+  height: 18px;
+  transform: translateX(0);
+  opacity: .85;
+  transition: transform .22s ease, opacity .22s;
+}
+
+.cta-with-arrow:hover .ico,
+.cta-with-arrow:focus-visible .ico {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
+/* “nudge” suave cada tanto para indicar interacción */
+@keyframes nudge {
+
+  0%,
+  92%,
+  100% {
+    transform: translateX(0)
+  }
+
+  96% {
+    transform: translateX(3px)
+  }
+}
+
+.cta-with-arrow .ico {
+  animation: nudge 4.6s ease-in-out infinite;
+}
+
+/* foco accesible */
+.cta-underline:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--c) 35%, transparent);
+}
+
+/* mobile: sin hover, mantenemos pista con subrayado ya visible (24%) y reacción en tap */
+@media (hover:none) {
+  .cta-with-arrow .ico {
+    animation: none;
+  }
+
+  /* evitar movimiento continuo en mobile si molesta */
+}
+
+/* sky-400/500 */
+
+.cta-underline {
+  --c: var(--brand);
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  /* color de texto normal */
+  text-decoration: none;
+  padding-bottom: 2px;
+  /* espacio para la barra */
+  transition: color .25s ease;
+  /* Barra como bg para que no mueva layout */
+  background: linear-gradient(var(--c), var(--c)) left bottom / 0 2px no-repeat;
+  /* ↑ inicia en 0% y 2px de grosor */
+}
+
+/* Hover/focus: llena la barra y tiñe el texto */
+.cta-underline:hover,
+.cta-underline:focus-visible {
+  color: var(--c);
+  background-size: 100% 2px;
+}
+
+/* Mobile tap (sin hover): respuesta inmediata */
+.cta-underline:active {
+  color: var(--c);
+  background-size: 100% 2px;
+}
+
+/* Accesibilidad: foco visible */
+.cta-underline:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--c) 35%, transparent);
+}
+
+/* Variante más “marcada” (3px) — opcional */
+.cta-underline.is-thick {
+  background-size: 0 3px;
+}
+
+.cta-underline.is-thick:hover,
+.cta-underline.is-thick:focus-visible,
+.cta-underline.is-thick:active {
+  background-size: 100% 3px;
+}
+</style>

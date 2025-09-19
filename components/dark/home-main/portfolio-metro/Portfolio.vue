@@ -69,11 +69,14 @@
         <div class="col-lg-8 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/esteña/mock-up-2.jpg" alt="" />
+              <img v-responsive-img
+                data-src-desktop="/dark/assets/imgs/portfolio-slider/esteña/Desktop/redes-sociales.jpg"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/esteña/mobile/full-feed.jpg" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="#">Diseño Logotipo</a>
+                <a href="#">Diseños de Post</a>
               </h5>
               <p class="ml-auto">
                 <a href="#">Identidad Visual</a>
@@ -84,7 +87,9 @@
         <div class="col-lg-4 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/esteña/mobile/mock-mobi-1.jpg" alt="" />
+              <img v-responsive-img data-src-desktop="/dark/assets/imgs/portfolio-slider/esteña/mobile/post-1.jpg"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/esteña/mobile/post-1.jpg" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -99,8 +104,10 @@
         <div class="col-lg-4 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <!-- TOOD: Modificar las fotos seleccionadas en Desktop y Mobile -->
-              <img src="/dark/assets/imgs/portfolio-slider/esteña/mobile/mock-mobi-2.jpg" alt="" />
+
+              <img v-responsive-img data-src-desktop="/dark/assets/imgs/portfolio-slider/esteña/mobile/4.jpg"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/esteña/mobile/4.jpg" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -115,7 +122,10 @@
         <div class="col-lg-8 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/esteña/mock-up-3.jpg" alt="" />
+              <img v-responsive-img
+                data-src-desktop="/dark/assets/imgs/portfolio-slider/esteña/Desktop/feed-desktop.jpg"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/esteña/mobile/feed-mobi.jpg" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -132,15 +142,16 @@
         <div class="col-lg-8 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/urban-code/desktop/portfolio.jpg" alt="" />
+              <img v-responsive-img
+                data-src-desktop="/dark/assets/imgs/portfolio-slider/urban-code/desktop/portfolio.jpg"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/urban-code/mobile/post-1.jpg" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="#">Diseño Logotipo</a>
                 <a href="#">Diseños de Post</a>
               </h5>
               <p class="ml-auto">
-                <a href="#">Identidad Visual</a>
                 <a href="#">Redes Sociales</a>
               </p>
             </div>
@@ -164,8 +175,9 @@
         <div class="col-lg-4 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <!-- TOOD: Modificar las fotos seleccionadas en Desktop y Mobile -->
-              <img src="/dark/assets/imgs/portfolio-slider/urban-code/mobile/post-1.jpg" alt="" />
+              <img v-responsive-img data-src-desktop="/dark/assets/imgs/portfolio-slider/urban-code/mobile/post.png"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/urban-code/mobile/post.png" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -180,7 +192,10 @@
         <div class="col-lg-8 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/urban-code/desktop/slider-2.jpg" alt="" />
+              <img v-responsive-img
+                data-src-desktop="/dark/assets/imgs/portfolio-slider/urban-code/desktop/slider-2.jpg"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/urban-code/mobile/mock-1.jpg" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -197,10 +212,11 @@
         <!-- Pachu Café -->
         <div class="col-lg-8 col-md-6">
           <div class="item mt-140">
-
             <div class="item mt-140">
               <div class="img">
-                <img src="/dark/assets/imgs/portfolio-slider/pachu/Desktop/slider.jpg" alt="" />
+                <img v-responsive-img data-src-desktop="/dark/assets/imgs/portfolio-slider/pachu/Desktop/slider.jpg"
+                  data-src-mobile="/dark/assets/imgs/portfolio-slider/pachu/Mobile/pachu-mobile.jpg"
+                  alt="Diseños de Post" loading="lazy" decoding="async" />
               </div>
               <div class="cont d-flex align-items-center mt-20">
                 <h5 class="fz-22">
@@ -216,7 +232,9 @@
         <div class="col-lg-4 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/pachu/Mobile/mock-2.jpg" alt="" />
+              <img v-responsive-img data-src-desktop="/dark/assets/imgs/portfolio-slider/pachu/Desktop/mock-4.jpg"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/pachu/Mobile/fachada-2.jpg" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -231,23 +249,9 @@
         <div class="col-lg-4 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <!-- TOOD: Modificar las fotos seleccionadas en Desktop y Mobile -->
-              <img src="/dark/assets/imgs/portfolio-slider/pachu/Mobile/mock-1.jpg" alt="" />
-            </div>
-            <div class="cont d-flex align-items-center mt-20">
-              <h5 class="fz-22">
-                <a href="#">Diseños de Papeleria</a>
-              </h5>
-              <p class="ml-auto">
-                <a href="#">Identidad Visual</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8 col-md-6">
-          <div class="item mt-140">
-            <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/pachu/Desktop/social-media.jpg" alt="" />
+              <img v-responsive-img data-src-desktop="/dark/assets/imgs/portfolio-slider/pachu/Desktop/mock-1.jpg"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/pachu/Mobile/mock-1.jpg" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -259,6 +263,25 @@
             </div>
           </div>
         </div>
+
+        <div class="col-lg-8 col-md-6">
+          <div class="item mt-140">
+            <div class="img">
+              <img v-responsive-img data-src-desktop="/dark/assets/imgs/portfolio-slider/pachu/Desktop/social-media.jpg"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/pachu/Mobile/post-multi.jpg" alt="Diseños de Post"
+                loading="lazy" decoding="async" />
+            </div>
+            <div class="cont d-flex align-items-center mt-20">
+              <h5 class="fz-22">
+                <a href="#">Diseños de Papeleria</a>
+              </h5>
+              <p class="ml-auto">
+                <a href="#">Identidad Visual</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -267,6 +290,9 @@
 
 <script setup lang="ts">
 import { useI18n } from '@/i18n';
+import responsiveImg from '@/common/loadResponsiveImage';
+const vResponsiveImg = responsiveImg; // registrar local
+
 const { t } = useI18n();
 
 </script>
@@ -276,6 +302,7 @@ const { t } = useI18n();
   position: relative;
   padding-top: 25px;
 }
+
 
 .sep-line::before {
   content: "";

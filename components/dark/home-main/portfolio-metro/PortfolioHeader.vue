@@ -1,7 +1,7 @@
 <template>
   <header
     class="header page-header-cerv bg-img section-padding"
-    data-background="/dark/assets/imgs/header/2.jpg"
+    data-background="/dark/assets/imgs/header/home-main/home-alta.jpg"
     data-overlay-dark="4"
   >
     <div class="container pt-100">

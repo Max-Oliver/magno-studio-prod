@@ -13,15 +13,12 @@ const messages = {
       address: 'Address',
       social: 'Social Media',
     },
-    ribbons: {
-      left: 'BUILDING DIGITAL DESIGN',
-      right: 'CREATIVE STUDIO',
-    },
     // en messages.en
     heroSlides: {
-      s1: { h2: 'We Create', h1: 'Awesome Design' }, // (corregí "Awoseme" -> Awesome)
-      s2: { h2: 'We Create Impactful', h1: 'Digital Experiences' },
-      s3: { h2: 'Elevate your', h1: 'Brand & Fuel Growth' },
+      h2: 'WE CREATE EXPERIENCES',
+      h1: { prefix: 'Digital experiences with ' },
+      words: ['impact', 'real results', 'growth'],
+      sub: 'At Magno Studio we blend creativity, strategy and technology to design brands and experiences that drive real results.',
       prev: 'Prev',
       next: 'Next',
     },
@@ -228,7 +225,14 @@ const messages = {
 
     // en messages.es
     heroSlides: {
-      s1: { h2: 'Creamos', h1: 'Diseños Asombrosos' },
+      s1: {
+        h2: 'Diseño que convierte',
+        h1_prefix: '',
+        h1_suffix: ' en resultados reales',
+        parrafo_1: 'En Magno Studio creemos en crear con propósito.',
+        parrafo_2: 'Trabajamos con visión estratégica y creatividad para que cada marca logre crecer y destacarse.',
+        parrafo_3: 'Tu éxito es parte de nuestra historia'
+      },
       s2: { h2: 'Creamos experiencias', h1: 'Digitales con impacto' },
       s3: { h2: 'Elevá tu', h1: 'Marca y acelera el crecimiento' },
       prev: 'Anterior',
@@ -236,35 +240,13 @@ const messages = {
     },
     // ES
     intro: {
-      headline_1: 'Si buscás un especialista para construir un',
-      headline_2: 'proyecto digital con sentido, podés',
-      headline_3: 'contactarnos haciendo clic',
-      headline_cta: 'aquí',
-      // years_label: 'Años de experiencia',
-      // years_amount: '3',
+      headline_1: 'Diseñamos',
+      headline_2: 'lo que tu marca necesita para crecer',
+      headline_cta: 'Evaluá tu identidad en 15 min',
+      headline_micro: 'Sin costo · Respondemos en 30 min',
+
       paragraph:
-        'Ya seas una agencia de desarrollo que quiere tercerizar diseño, una empresa en busca de un Product Designer o un equipo de Producto, una agencia de marketing que necesita una landing, una startup que quiere lanzar una app o una compañía que planea rebranding o rediseño web, recibimos cada desafío con los brazos abiertos.',
-      marquee: [
-        'Diseño UI-UX',
-        'Desarrollo Web',
-        'Marketing Digital',
-        'Producto Digital',
-        'Branding',
-      ],
-    },
-    servicesIntro: {
-      watch: 'Ver Intro',
-      why: '¿Por qué elegirnos?',
-      titleLines: ['La agencia creativa y', 'moderna que necesitás.'],
-      paragraph:
-        'Diseñamos marcas, sitios web y productos digitales bellos, rápidos y con propósito.',
-      stats: {
-        projects_value: 7,
-        projects_label: ['Proyectos', 'Completados'],
-        satisfaction_value: 10,
-        satisfaction_unit: '+',
-        satisfaction_label: ['Clientes', 'Satisfechos'],
-      },
+        'Desde landings que convierten hasta webs a medida, pasando por branding, apps y rediseños completos. Si sos una agencia, startup o empresa que quiere dar el próximo paso, en Magno Studio estamos listos para hacerlo realidad junto a vos',
     },
     services2: {
       eyebrow: 'Así te ayudamos',
@@ -272,9 +254,9 @@ const messages = {
     },
     servicesTabs: {
       eyebrow: '¿Quiénes somos?',
-      title: 'La guía definitiva para el éxito en marketing.',
+      title: 'Un equipo creativo con visión integral y compromiso',
       intro:
-        'Llevamos nuestros talentos a la frontera de la tecnología para generar impacto real. Así, vivimos en primera fila el futuro.',
+        'Cada servicio que ofrecemos está pensado para impulsar resultados reales. En Magno Studio trabajamos con estrategia, creatividad y compromiso, involucrandonos en cada proyecto como si fuera propio, apostando siempre a resultados que trascienden lo estético.',
       cta: 'Ver más',
       tabs: [
         {
@@ -282,28 +264,28 @@ const messages = {
           label: 'Sobre nosotros',
           img: '/dark/assets/imgs/about-us/about_us_image.png',
           icon: '/dark/assets/imgs/serv-icons/0.png',
-          text: 'Somos un estudio creativo especializado en diseño, desarrollo y estrategia para construir experiencias digitales excepcionales.',
+          text: 'Somos un estudio creativo que combina diseño, desarrollo y estrategia para construir experiencias digitales con propósito. Creemos en trabajar con compromiso real, porque tu crecimiento también impulsa el nuestro.',
         },
         {
           num: '02',
           label: 'Nuestra misión',
           img: '/dark/assets/imgs/intro/02.jpg',
           icon: '/dark/assets/imgs/serv-icons/1.png',
-          text: 'Trabajamos junto a marcas para crear productos útiles, bellos y rápidos que impulsen el negocio con resultados medibles.',
+          text: 'Potenciar marcas y negocios a través de soluciones digitales únicas. No diseñamos solo por estética ni desarrollamos por cumplir: lo hacemos para generar impacto real, diferenciación y resultados medibles.',
         },
         {
           num: '03',
           label: 'Nuestra visión',
           img: '/dark/assets/imgs/intro/03.jpg',
           icon: '/dark/assets/imgs/serv-icons/2.png',
-          text: 'Diseño y tecnología en conjunto para crear soluciones memorables, accesibles y escalables que la gente ame usar.',
+          text: 'Ser un referente creativo en la región, reconocido por transformar ideas en proyectos digitales que inspiran, conectan y hacen crecer a las marcas con autenticidad y valor.',
         },
         {
           num: '04',
           label: 'Logros',
           img: '/dark/assets/imgs/intro/03.jpg',
           icon: '/dark/assets/imgs/serv-icons/0.png',
-          text: 'Proyectos, reconocimientos y casos de éxito que reflejan nuestro compromiso con la calidad, el performance y el impacto de marca.',
+          text: 'Hemos colaborado con empresas de diversos rubros, desde startups hasta agencias consolidadas, llevando adelante proyectos de branding, desarrollo web y estrategias digitales que impulsaron su presencia y resultados. Cada logro refleja nuestra convicción: crecer junto a quienes confían en nosotros.',
         },
       ],
     },
@@ -317,28 +299,28 @@ const messages = {
           titleA: 'Branding',
           titleB: '& Identidad',
           img: '/dark/assets/imgs/serv-icons/5.png',
-          desc: 'Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.',
+          desc: 'Construimos identidades sólidas y memorables que transmiten quién sos y qué te hace diferente.',
           link: '/dark/page-services-details',
         },
         {
           titleA: 'Diseño Gráfico',
-          titleB: 'y Social Media',
+          titleB: '& Social Media',
           img: '/dark/assets/imgs/serv-icons/3.png',
-          desc: 'Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.',
+          desc: 'Creamos contenido visual estratégico para que tu marca comunique con impacto en cada canal.',
           link: '/dark/page-services-details',
         },
         {
           titleA: 'Desarrollo',
           titleB: 'de MVP',
           img: '/dark/assets/imgs/serv-icons/5.png',
-          desc: 'Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.',
+          desc: 'Validamos tu idea con un producto mínimo funcional que te permite lanzarte al mercado rápido y con solidez.',
           link: '/dark/page-services-details',
         },
         {
           titleA: 'Desarrollo',
-          titleB: 'Web',
+          titleB: '& Diseño Web',
           img: '/dark/assets/imgs/serv-icons/4.png',
-          desc: 'Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.',
+          desc: 'Diseñamos y desarrollamos sitios web a medida, optimizados para cautivar, convertir y escalar.',
           link: '/dark/page-services-details',
         },
       ],
@@ -350,7 +332,7 @@ const messages = {
     },
     slider: {
       eyebrow: 'Lo que hacemos',
-      tittle:  'Diseños que venden & Webs que convierten',
+      tittle: 'Diseños que venden & Webs que convierten',
       subcopy: 'Una muestra de cómo trabajamos',
     },
     works: {

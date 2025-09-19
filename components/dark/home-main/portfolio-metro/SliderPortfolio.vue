@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="slider-sec">
     <div class="sec-head ml-60 mr-60 mb-80">
       <h6 class="sub-title main-color mb-10">{{ t('slider.eyebrow') }}</h6>
       <div class="d-flex align-items-center">
@@ -37,9 +37,8 @@
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="bg-img" data-bg-desktop="/dark/assets/imgs/portfolio-slider/pachu/desktop/slider.jpg"
-                data-bg-mobile="/dark/assets/imgs/portfolio-slider/pachu/mobile/12.jpg"
-                data-overlay-dark="4">
+              <div class="bg-img" data-bg-desktop="/dark/assets/imgs/portfolio-slider/pachu/Desktop/slider.jpg"
+                data-bg-mobile="/dark/assets/imgs/portfolio-slider/pachu/Mobile/fachada-1.jpg" data-overlay-dark="4">
                 <a href="/home/works"></a>
               </div>
             </SwiperSlide>
@@ -238,32 +237,31 @@ watch([galleryImg, galleryText], () => {
 <style scoped>
 /* Mobile: ≤ 640px */
 @media (max-width: 640px) {
-  .half-slider .sec-head {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
+  .slider-sec .sec-head {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
     margin-bottom: 48px !important;
   }
 
-  .half-slider .sec-head h2 {
-    /* tamaño/line-height más cómodo en pantallas chicas */
+  .slider-sec .sec-head h2 {
     font-size: clamp(28px, 7vw, 36px);
     line-height: 1.15;
   }
 
-  .half-slider .sec-head .sub-title {
+  .slider-sec .sec-head .sub-title {
     margin-bottom: 8px;
   }
 
-  .half-slider .sec-head .bord {
+  .slider-sec .sec-head .bord {
     margin-top: 12px;
   }
 }
 
-/* XS: ≤ 380px (opcional) */
+/* XS extra apretado */
 @media (max-width: 380px) {
-  .half-slider .sec-head {
-    margin-left: 16px !important;
-    margin-right: 16px !important;
+  .slider-sec .sec-head {
+    margin-left: 12px !important;
+    margin-right: 12px !important;
   }
 }
 </style>
