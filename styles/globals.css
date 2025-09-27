@@ -47,6 +47,19 @@
 .menu-col { list-style:none; margin:0; padding:0; }
 .menu-col li { margin: 0 0 1rem; }
 
+.u-underline-2 {
+  position: relative;
+  display: inline-block;
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+.u-underline-2:hover,
+.u-underline-2:focus-visible { color: dodgerblue; }
+
+
+
+
 .u-underline {
   position: relative;
   display: inline-block;
@@ -55,7 +68,8 @@
   transition: color .2s ease;
 }
 .u-underline:hover,
-.u-underline:focus-visible { color:#fff; }
+.u-underline:focus-visible { color: dodgerblue; }
+
 
 .u-underline::after {
   content:"";
@@ -64,7 +78,7 @@
   top:-0.1rem;              /* subraya “arriba” como en la captura */
   width:100%;
   height:1px;
-  background: rgba(255,255,255,.25);
+  background: dodgerblue;
   transform: scaleX(0);
   transform-origin:left center;
   transition: transform .35s ease, background-color .2s ease;
@@ -72,11 +86,12 @@
 .u-underline:hover::after,
 .u-underline:focus-visible::after {
   transform: scaleX(1);
-  background: rgba(255,255,255,.9);
+  background: dodgerblue;
 }
 .u-underline.is-active::after {
   transform: scaleX(1);
-  background: rgba(255,255,255,.95);
+  background: dodgerblue;
+  
 }
 @media (prefers-reduced-motion: reduce){
   .u-underline::after{ transition:none; }

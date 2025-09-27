@@ -43,7 +43,7 @@
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div class="bg-img" data-bg-desktop="/dark/assets/imgs/portfolio-slider/esteña/Desktop/feed-desktop.jpg"
+              <div class="bg-img" data-bg-desktop="/dark/assets/imgs/portfolio-slider/esteña/Desktop/redes-sociales.jpg"
                 data-bg-mobile="/dark/assets/imgs/portfolio-slider/esteña/mobile/full-feed.jpg" data-overlay-dark="6">
                 <a href="/home/works"></a>
               </div>

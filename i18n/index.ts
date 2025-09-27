@@ -15,12 +15,14 @@ const messages = {
     },
     // en messages.en
     heroSlides: {
-      h2: 'WE CREATE EXPERIENCES',
-      h1: { prefix: 'Digital experiences with ' },
-      words: ['impact', 'real results', 'growth'],
-      sub: 'At Magno Studio we blend creativity, strategy and technology to design brands and experiences that drive real results.',
-      prev: 'Prev',
-      next: 'Next',
+      s1: {
+        h2_static_prefix: 'The creative studio',
+        h2_static_strong: 'that powers your business',
+        parrafo_1:
+          'We blend creativity & strategy so your business grows and stands out.',
+        parrafo_2: 'Fast websites, smooth animations and 24/7 funnels.',
+        parrafo_3: 'Your success is part of our story.',
+      },
     },
     // EN
     intro: {
@@ -226,17 +228,11 @@ const messages = {
     // en messages.es
     heroSlides: {
       s1: {
-        h2: 'Diseño que convierte',
-        h1_prefix: '',
-        h1_suffix: ' en resultados reales',
-        parrafo_1: 'En Magno Studio creemos en crear con propósito.',
-        parrafo_2: 'Trabajamos con visión estratégica y creatividad para que cada marca logre crecer y destacarse.',
-        parrafo_3: 'Tu éxito es parte de nuestra historia'
+        h2_static_prefix: 'El estudio creativo',
+        h2_static_strong: 'que potencia tu negocio',
+        parrafo_1:
+          'Combinamos creatividad & estrategia para que tu negocio logre crecer y destacarse. Tu éxito es parte de nuestra historia.'
       },
-      s2: { h2: 'Creamos experiencias', h1: 'Digitales con impacto' },
-      s3: { h2: 'Elevá tu', h1: 'Marca y acelera el crecimiento' },
-      prev: 'Anterior',
-      next: 'Siguiente',
     },
     // ES
     intro: {
@@ -246,7 +242,7 @@ const messages = {
       headline_micro: 'Sin costo · Respondemos en 30 min',
 
       paragraph:
-        'Desde landings que convierten hasta webs a medida, pasando por branding, apps y rediseños completos. Si sos una agencia, startup o empresa que quiere dar el próximo paso, en Magno Studio estamos listos para hacerlo realidad junto a vos',
+        'Desde landings veloces, animaciones fluidas y funnels que trabajan 24/7, pasando por branding, apps y rediseños completos. Si sos una agencia, startup o empresa que quiere dar el próximo paso, en Magno Studio estamos listos para hacerlo realidad junto a vos',
     },
     services2: {
       eyebrow: 'Así te ayudamos',

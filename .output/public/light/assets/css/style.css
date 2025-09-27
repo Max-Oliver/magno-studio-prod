@@ -5931,9 +5931,9 @@ footer.clean-footer.crev:before {
   font-size: 74px;
 }
 
-.startup-header {
+/* .startup-header {
   padding: 15px 15px 0;
-}
+} */
 
 .startup-header .bg-img {
   min-height: 100vh;
@@ -10029,9 +10029,9 @@ footer.clean-footer.crev:before {
   .startup-header .caption .lg-text {
     font-size: 35px;
   }
-  .startup-header {
+  /* .startup-header {
     padding: 0;
-  }
+  } */
   .slider .parallax-slider .caption h1 {
     font-size: 50px;
   }

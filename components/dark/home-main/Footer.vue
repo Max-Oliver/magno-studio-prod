@@ -11,7 +11,7 @@
       </div>
       <div class="footer__cta">
         <h2 id="footer-heading" class="footer__title">
-          <a href="/home/contact" class="footer__titleLink">
+          <a :href="whatsappUrl" class="footer__titleLink u-underline-2">
             <span>{{ t('footer.cta_title') }}</span>
             <span class="fz-70 ti-arrow-top-right"></span>
           </a>
@@ -41,12 +41,14 @@
         <nav :aria-label="t('footer.aria_social')">
           <ul class="menu-col">
             <li>
+              <i class="fab fa-instagram mr-10"></i>
               <a class="u-underline" href="https://www.instagram.com/magnocreativee/" target="_blank" rel="noreferrer">
                 {{ t('social.instagram') }}
               </a>
             </li>
             <li>
-              <a class="u-underline" href="https://behance.net/magnocreativee" target="_blank" rel="noreferrer">
+              <i class="fab fa-facebook mr-10"></i>
+              <a class="u-underline" href="https://www.facebook.com/people/MagnoStudio/61579703818795/" target="_blank" rel="noreferrer">
                 {{ t('social.behance') }}
               </a>
             </li>
@@ -60,6 +62,17 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import { useI18n } from '@/i18n';
+
+import { useWhatsapp } from '../../../common/useWhatsapp'
+
+const props = withDefaults(defineProps<{
+  number?: string,
+  text?: string
+}>(), {})
+
+
+const { buildUrl } = useWhatsapp()
+const whatsappUrl = computed(() => buildUrl(props.number, props.text))
 
 const { t } = useI18n();
 

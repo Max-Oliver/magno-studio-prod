@@ -129,6 +129,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Navigation, Pagination, Parallax } from 'swiper';
 import { onMounted } from 'vue';
 import { useI18n } from '@/i18n';
+
 const { t } = useI18n();
 import typedLoop from '@/common/typed'            // ⬅️ directiva
 const vTypedLoop = typedLoop                              // ⬅️ registro local
@@ -165,7 +166,7 @@ const swiperOptions = {
 };
 </script>
 
-<style>
+<style scoped>
 /* Título compuesto en 3 líneas */
 .hero-title {
   display: grid;
