@@ -3,7 +3,8 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery as getQuery$1, createError, getResponseStatusText } from 'file:///Users/zerobyone/Desktop/Magno/New%20Production/Magno%20Production/web_magno_prod/node_modules/h3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, readBody, createError, getQuery as getQuery$1, getResponseStatusText } from 'file:///Users/zerobyone/Desktop/Magno/New%20Production/Magno%20Production/web_magno_prod/node_modules/h3/dist/index.mjs';
+import { Resend } from 'file:///Users/zerobyone/Desktop/Magno/New%20Production/Magno%20Production/web_magno_prod/node_modules/resend/dist/index.mjs';
 import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/zerobyone/Desktop/Magno/New%20Production/Magno%20Production/web_magno_prod/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import { stringify, uneval } from 'file:///Users/zerobyone/Desktop/Magno/New%20Production/Magno%20Production/web_magno_prod/node_modules/devalue/index.js';
 import { renderToString } from 'file:///Users/zerobyone/Desktop/Magno/New%20Production/Magno%20Production/web_magno_prod/node_modules/vue/server-renderer/index.mjs';
@@ -63,7 +64,10 @@ const _inlineRuntimeConfig = {
   "public": {
     "whatsappNumber": "+59891345926",
     "whatsappText": "Hola Magno, vengo desde la web. Quiero cotizar 🚀"
-  }
+  },
+  "resendApiKey": "re_APWRquFn_JZUyqg9ZhrJwBfrGms7WumfS",
+  "contactTo": "mariaarzuaga72@gmail.com,max3.1994@gmail.com",
+  "contactFrom": "Magno Studio <hello@magnocreative.es>"
 };
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _inlineRuntimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
@@ -656,9 +660,11 @@ const errorHandler = (async function errorhandler(error, event) {
   return send(event, html);
 });
 
+const _lazy_XKNqwu = () => Promise.resolve().then(function () { return contact_post$1; });
 const _lazy_hfepvi = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
+  { route: '/api/contact', handler: _lazy_XKNqwu, lazy: true, middleware: false, method: "post" },
   { route: '/__nuxt_error', handler: _lazy_hfepvi, lazy: true, middleware: false, method: undefined },
   { route: '/**', handler: _lazy_hfepvi, lazy: true, middleware: false, method: undefined }
 ];
@@ -842,6 +848,55 @@ const template$1 = _template;
 const errorDev = /*#__PURE__*/Object.freeze({
   __proto__: null,
   template: template$1
+});
+
+const contact_post = defineEventHandler(async (event) => {
+  try {
+    const body = await readBody(event);
+    if (body.hp) {
+      return { ok: true, skipped: true };
+    }
+    if (!(body == null ? void 0 : body.name) || !(body == null ? void 0 : body.email) || !(body == null ? void 0 : body.message)) {
+      throw createError({ statusCode: 400, statusMessage: "Faltan campos obligatorios." });
+    }
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const toList = (process.env.CONTACT_TO || "").split(",").map((s) => s.trim()).filter(Boolean);
+    if (!toList.length) {
+      throw createError({ statusCode: 500, statusMessage: "No hay destinatarios configurados." });
+    }
+    const html = `
+      <div style="font-family:Inter,Arial,sans-serif">
+        <h2>Nuevo mensaje desde el sitio</h2>
+        <p><b>Nombre:</b> ${escapeHtml(body.name)}</p>
+        <p><b>Email:</b> ${escapeHtml(body.email)}</p>
+        ${body.subject ? `<p><b>Asunto:</b> ${escapeHtml(body.subject)}</p>` : ""}
+        <p><b>Mensaje:</b></p>
+        <pre style="white-space:pre-wrap">${escapeHtml(body.message)}</pre>
+      </div>
+    `;
+    const { data, error } = await resend.emails.send({
+      from: process.env.CONTACT_FROM || "Magno Studio <hello@magnocreative.es>",
+      to: toList,
+      replyTo: body.email,
+      // útil para responder directo al cliente
+      subject: body.subject || "Nuevo mensaje de contacto",
+      html
+    });
+    if (error) {
+      throw createError({ statusCode: 502, statusMessage: error.message || "Error enviando email" });
+    }
+    return { ok: true, id: data == null ? void 0 : data.id };
+  } catch (err) {
+    throw createError({ statusCode: err.statusCode || 500, statusMessage: err.statusMessage || "Error interno" });
+  }
+});
+function escapeHtml(str = "") {
+  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+const contact_post$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: contact_post
 });
 
 const Vue3 = version.startsWith("3");

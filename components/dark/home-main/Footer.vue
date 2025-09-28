@@ -3,57 +3,71 @@
     <div class="footer__overlay"></div>
 
     <div class="footer__container">
-      <div class="sec-head">
-        <h6 class="sub-title main-color mb-25">{{ t('footer.cta_subtitle') }}</h6>
-        <div class="bord pt-10 bord-thin-top d-flex align-items-center">
-  
-        </div>
-      </div>
-      <div class="footer__cta">
-        <h2 id="footer-heading" class="footer__title">
-          <a :href="whatsappUrl" class="footer__titleLink u-underline-2">
-            <span>{{ t('footer.cta_title') }}</span>
-            <span class="fz-70 ti-arrow-top-right"></span>
-          </a>
-        </h2>
-      </div>
+    
 
-      <div class="footer__grid">
-        <div>
-          <img src="/dark/assets/imgs/logo-light.png" alt="Magno Studio" class="footer__logo" />
+        <div class="sec-head">
+          <h6 class="sub-title main-color mb-25">{{ t('footer.cta_subtitle') }}</h6>
+          <div class="bord pt-10 bord-thin-top d-flex align-items-center">
+
+          </div>
+        </div>
+        <div class="footer__cta">
+          <h2 id="footer-heading" class="footer__title">
+            <a :href="whatsappUrl" class="footer__titleLink u-underline-2">
+              <span>{{ t('footer.cta_title') }}</span>
+              <span class="fz-70 ti-arrow-top-right"></span>
+            </a>
+          </h2>
         </div>
 
-        <div>
-          <h6 class="footer__label">{{ t('footer.address_label') }}</h6>
-          <address class="footer__address">
-            {{ t('footer.address_line1') }}<br />{{ t('footer.address_line2') }}
-          </address>
+        <div class="footer__grid">
+          <div>
+            <img src="/dark/assets/imgs/logo-light.png" alt="Magno Studio" class="footer__logo" />
+          </div>
+
+          <div>
+            <h6 class="footer__label">{{ t('footer.address_label') }}</h6>
+            <address class="footer__address">
+              {{ t('footer.address_line1') }}<br />{{ t('footer.address_line2') }}
+            </address>
+          </div>
+
+          <nav :aria-label="t('footer.aria_primary')">
+            <ul class="menu-col">
+              <li><a class="u-underline is-active" href="/">{{ t('links.home') }}</a></li>
+              <li><a class="u-underline" href="/home/works">{{ t('links.work') }}</a></li>
+              <li><a class="u-underline" href="/home/contact">{{ t('links.contact') }}</a></li>
+            </ul>
+          </nav>
+
+          <nav :aria-label="t('footer.aria_social')">
+            <ul class="menu-col">
+              <li>
+                <i class="fab fa-instagram mr-10"></i>
+                <a class="u-underline" href="https://www.instagram.com/magnocreativee/" target="_blank"
+                  rel="noreferrer">
+                  {{ t('social.instagram') }}
+                </a>
+              </li>
+              <li>
+                <i class="fab fa-facebook mr-10"></i>
+                <a class="u-underline" href="https://www.facebook.com/people/MagnoStudio/61579703818795/"
+                  target="_blank" rel="noreferrer">
+                  {{ t('social.behance') }}
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
-        <nav :aria-label="t('footer.aria_primary')">
-          <ul class="menu-col">
-            <li><a class="u-underline is-active" href="/">{{ t('links.home') }}</a></li>
-            <li><a class="u-underline" href="/home/works">{{ t('links.work') }}</a></li>
-            <li><a class="u-underline" href="/home/contact">{{ t('links.contact') }}</a></li>
-          </ul>
-        </nav>
 
-        <nav :aria-label="t('footer.aria_social')">
-          <ul class="menu-col">
-            <li>
-              <i class="fab fa-instagram mr-10"></i>
-              <a class="u-underline" href="https://www.instagram.com/magnocreativee/" target="_blank" rel="noreferrer">
-                {{ t('social.instagram') }}
-              </a>
-            </li>
-            <li>
-              <i class="fab fa-facebook mr-10"></i>
-              <a class="u-underline" href="https://www.facebook.com/people/MagnoStudio/61579703818795/" target="_blank" rel="noreferrer">
-                {{ t('social.behance') }}
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <div className="min-h-screen w-full bg-black relative">
+        <div class="absolute inset-0 z-99999" style="
+            background-image:
+              radial-gradient(circle at 50% 100%, rgba(70,85,110,0.5) 0%, transparent 60%),
+              radial-gradient(circle at 50% 100%, rgba(99,102,241,0.4) 0%, transparent 70%),
+              radial-gradient(circle at 50% 100%, rgba(181,184,208,0.3) 0%, transparent 80%);
+          " />
       </div>
     </div>
   </footer>
@@ -84,7 +98,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-
 .footer {
   position: relative;
   overflow: hidden;
@@ -148,7 +161,7 @@ onMounted(() => {
 
 .footer__titleLink:hover .footer__arrow {
   transform: translate(4px, -4px);
-  color:dodgerblue
+  color: dodgerblue
 }
 
 .footer__grid {

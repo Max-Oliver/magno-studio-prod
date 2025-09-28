@@ -250,15 +250,15 @@
           <div class="item mt-140">
             <div class="img">
               <img v-responsive-img data-src-desktop="/dark/assets/imgs/portfolio-slider/pachu/Desktop/mock-1.jpg"
-                data-src-mobile="/dark/assets/imgs/portfolio-slider/pachu/Mobile/mock-1.jpg" alt="Diseños de Post"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/pachu/Mobile/mock-1.jpg" alt="Diseño de Papeleria"
                 loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="#">Diseños de Post</a>
+                <a href="#">Diseño de Papeleria</a>
               </h5>
               <p class="ml-auto">
-                <a href="#">Redes Sociales</a>
+                <a href="#">Identidad Visual</a>
               </p>
             </div>
           </div>
@@ -273,10 +273,10 @@
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
-                <a href="#">Diseños de Papeleria</a>
+                <a href="#">Diseños de Post</a>
               </h5>
               <p class="ml-auto">
-                <a href="#">Identidad Visual</a>
+                <a href="#">Redes Sociales</a>
               </p>
             </div>
           </div>

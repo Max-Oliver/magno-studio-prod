@@ -12,6 +12,12 @@ declare module 'nuxt/schema' {
 
       cdnURL: string,
    },
+
+   resendApiKey: string,
+
+   contactTo: string,
+
+   contactFrom: string,
   }
   interface PublicRuntimeConfig {
    whatsappNumber: string,

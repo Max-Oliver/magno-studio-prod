@@ -9,10 +9,14 @@ export default defineNuxtConfig({
     shim: false,
   },
   runtimeConfig: {
+    resendApiKey: process.env.RESEND_API_KEY,
+    contactTo:    process.env.CONTACT_TO,
+    contactFrom:  process.env.CONTACT_FROM,
     public: {
       whatsappNumber: process.env.NUXT_PUBLIC_WHATSAPP_NUMBER || '+59891345926',
       whatsappText: process.env.NUXT_PUBLIC_WHATSAPP_TEXT || '',
     },
+
   },
   nitro: {},
   alias: {

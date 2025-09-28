@@ -13,6 +13,7 @@
     "flag-icons": "^7.5.0",
     "lucide-vue-next": "^0.542.0",
     "nuxt": "^3.10.1",
+    "resend": "^6.1.0",
     "swiper": "^8.4.7",
     "typed.js": "^2.1.0",
     "vue": "^3.4.15",
