@@ -14,7 +14,7 @@
       <div class="row pt-30">
         <div v-for="(item, i) in items" :key="i" class="col-lg-3 col-md-6 items">
           <!-- Card con borde glow animado -->
-          <article class="item-box bg md-mb50 card-glow group">
+          <article class="item-box bg md-mb50 card-glow group" @pointerdown="onCardTap">
             <!-- capa borde “lleno” (se anima al hover/focus) -->
             <span class="card-glow__rim" aria-hidden="true"></span>
             <!-- trazo que “viaja” alrededor -->
@@ -83,102 +83,187 @@ type Item = {
   img: string; desc: string; link: string;
 }
 const items = computed(() => t('servicesBoxes.list') as Item[])
+
+
+let clearTapTimer: number | null = null
+
+function onCardTap(e: PointerEvent) {
+  const card = (e.target as HTMLElement)?.closest('.card-glow') as HTMLElement | null
+  if (!card) return
+
+  card.classList.add('is-active')
+  if (clearTapTimer) window.clearTimeout(clearTapTimer)
+  // se apaga solita tras 1200ms
+  clearTapTimer = window.setTimeout(() => {
+    card.classList.remove('is-active')
+  }, 1200)
+}
+
+onBeforeUnmount(() => {
+  if (clearTapTimer) window.clearTimeout(clearTapTimer)
+})
 </script>
 
 <style scoped>
 /* ====== Glow animado en el borde (sin Tailwind) ====== */
-@property --angle { syntax:"<angle>"; inherits:true; initial-value:0deg; }
+@property --angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
 
-@keyframes spin { to { --angle: 360deg; } }
+@keyframes spin {
+  to {
+    --angle: 360deg;
+  }
+}
 
-.card-glow{
+.card-glow {
   position: relative;
   border-radius: 16px;
-  border: 1px solid rgba(255,255,255,.08);
-  background: #141414; /* tu base oscura */
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: #141414;
+  /* tu base oscura */
   overflow: hidden;
-  isolation: isolate; /* evita que el mix-blend afecte fuera */
+  isolation: isolate;
+  /* evita que el mix-blend afecte fuera */
 }
 
 /* Capa de borde “lleno” con conic-gradient (glow suave) */
-.card-glow__rim{
-  position:absolute; inset:0; border-radius: inherit;
+.card-glow__rim {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
   border: 1px solid transparent;
   background:
-    linear-gradient(#141414,#141414) padding-box,
+    linear-gradient(#141414, #141414) padding-box,
     conic-gradient(from var(--angle),
-      rgba(100,116,139,.35) 75%, /* slate-600/35 */
-      #5eead4 86%,               /* teal-300 */
-      #60a5fa 92%,               /* sky-400 */
-      rgba(100,116,139,.35) 100%
-    ) border-box;
-  opacity: 0; transition: opacity .25s ease;
+      rgba(100, 116, 139, .35) 75%,
+      /* slate-600/35 */
+      #5eead4 86%,
+      /* teal-300 */
+      #60a5fa 92%,
+      /* sky-400 */
+      rgba(100, 116, 139, .35) 100%) border-box;
+  opacity: 0;
+  transition: opacity .25s ease;
   pointer-events: none;
   z-index: 0;
 }
 
 /* Trazo fino que “viaja” alrededor (underline extendido) */
-.card-glow__dash{
-  position:absolute; inset:1px; border-radius: calc(16px - 1px);
+.card-glow__dash {
+  position: absolute;
+  inset: 1px;
+  border-radius: calc(16px - 1px);
   border: 2px solid transparent;
   background:
-    linear-gradient(#141414,#141414) padding-box,
+    linear-gradient(#141414, #141414) padding-box,
     conic-gradient(from var(--angle),
-      #9aa3ff 0%, transparent 10%) border-box; /* trazo */
-  opacity: 0; transition: opacity .25s ease;
+      #9aa3ff 0%, transparent 10%) border-box;
+  /* trazo */
+  opacity: 0;
+  transition: opacity .25s ease;
   pointer-events: none;
   z-index: 0;
   animation: spin 2400ms linear infinite paused;
 }
 
 /* Contenido por encima de las capas */
-.card-glow__content{ position: relative; z-index: 1; }
+.card-glow__content {
+  position: relative;
+  z-index: 1;
+}
 
 /* Dispara animaciones sólo en hover/focus dentro de la card */
-.card-glow:hover .card-glow__rim,
-.card-glow:focus-within .card-glow__rim{
+/* .card-glow:hover .card-glow__rim,
+.card-glow:focus-within .card-glow__rim {
   opacity: 1;
   animation: spin 6000ms linear infinite;
 }
 
 .card-glow:hover .card-glow__dash,
-.card-glow:focus-within .card-glow__dash{
+.card-glow:focus-within .card-glow__dash {
+  opacity: 1;
+  animation-play-state: running;
+} */
+
+/* Enciende el glow con hover, focus-within o tap (.is-active) */
+.card-glow:hover .card-glow__rim,
+.card-glow:focus-within .card-glow__rim,
+.card-glow.is-active .card-glow__rim{
+  opacity: 1;
+  animation: spin 6000ms linear infinite;
+}
+
+.card-glow:hover .card-glow__dash,
+.card-glow:focus-within .card-glow__dash,
+.card-glow.is-active .card-glow__dash{
+  opacity: 1;
+  animation-play-state: running;
+}
+.card-glow:active .card-glow__rim,
+.card-glow:active .card-glow__dash{ /* opcional */
   opacity: 1;
   animation-play-state: running;
 }
 
-/* ====== Mobile/Tablet: desactivar anims y dejar todo visible ====== */
-@media (hover: none), (pointer: coarse){
-  .card-glow__rim, .card-glow__dash{ display:none !important; }
-}
 
 /* Respeta reduced motion */
-@media (prefers-reduced-motion: reduce){
-  .card-glow__rim, .card-glow__dash{ animation: none !important; }
+@media (prefers-reduced-motion: reduce) {
+
+  .card-glow__rim,
+  .card-glow__dash {
+    animation: none !important;
+  }
 }
 
 /* ====== Lo tuyo original para móviles (siempre “abiertas”) ====== */
-@media (hover: none), (pointer: coarse) {
+@media (hover: none),
+(pointer: coarse) {
   .services-boxs .item-box {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
   }
+
   .services-boxs .item-box .icon,
   .services-boxs .item-box h5,
   .services-boxs .item-box p,
-  .services-boxs .item-box .rmore { transform: none !important; }
+  .services-boxs .item-box .rmore {
+    transform: none !important;
+  }
+
   .services-boxs .item-box p,
-  .services-boxs .item-box .rmore { position: static !important; }
-  .services-boxs .item-box h5 { margin-bottom: 12px !important; }
+  .services-boxs .item-box .rmore {
+    position: static !important;
+  }
+
+  .services-boxs .item-box h5 {
+    margin-bottom: 12px !important;
+  }
+
   .services-boxs .item-box p {
-    opacity: 1 !important; visibility: visible !important; max-height: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    max-height: none !important;
     margin: 0 0 16px 0 !important;
   }
+
   .services-boxs .item-box .rmore {
-    opacity: 1 !important; transform: none !important; margin-top: auto !important;
+    opacity: 1 !important;
+    transform: none !important;
+    margin-top: auto !important;
   }
-  .services-boxs .item-box::before, .services-boxs .item-box::after { opacity: 0 !important; }
-  .services-boxs .item-box:hover, .services-boxs .item-box:active { transform: none !important; }
+
+  .services-boxs .item-box::before,
+  .services-boxs .item-box::after {
+    opacity: 0 !important;
+  }
+
+  .services-boxs .item-box:hover,
+  .services-boxs .item-box:active {
+    transform: none !important;
+  }
 }
 </style>
