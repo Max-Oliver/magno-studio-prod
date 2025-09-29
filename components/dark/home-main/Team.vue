@@ -29,13 +29,13 @@
             </div>
             <div class="social">
               <div class="links">
-                <a href="#0">
+                <a href="https://www.instagram.com/magnocreativee/">
                   <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="#0">
+                <a href="https://www.instagram.com/magnocreativee/">
                   <i class="fab fa-medium"></i>
                 </a>
-                <a href="#0">
+                <a href="https://www.instagram.com/magnocreativee/">
                   <i class="fab fa-instagram"></i>
                 </a>
               </div>

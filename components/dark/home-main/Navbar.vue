@@ -149,7 +149,6 @@ setLocale('es');
 import { onMounted, onUnmounted, computed } from 'vue';
 import { ref } from 'vue';
 import { useWhatsapp } from '../../../common/useWhatsapp'
-import { MailIcon, MessageCircle } from 'lucide-vue-next'
 
 const props = withDefaults(defineProps<{
   number?: string,
