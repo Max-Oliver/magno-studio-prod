@@ -1,6 +1,0 @@
-const NewServices2_vue_vue_type_style_index_0_scoped_232fbf22_lang = "@media (hover:none),(pointer:coarse){.services-boxs .item-box[data-v-232fbf22]{display:flex;flex-direction:column;padding-bottom:20px}.services-boxs .item-box .icon[data-v-232fbf22],.services-boxs .item-box .rmore[data-v-232fbf22],.services-boxs .item-box h5[data-v-232fbf22],.services-boxs .item-box p[data-v-232fbf22]{transform:none!important}.services-boxs .item-box .rmore[data-v-232fbf22],.services-boxs .item-box p[data-v-232fbf22]{position:static!important}.services-boxs .item-box h5[data-v-232fbf22]{margin-bottom:12px!important}.services-boxs .item-box p[data-v-232fbf22]{margin:0 0 16px!important;max-height:none!important;opacity:1!important;visibility:visible!important}.services-boxs .item-box .rmore[data-v-232fbf22]{margin-top:auto!important;opacity:1!important;transform:none!important}.services-boxs .item-box[data-v-232fbf22]:after,.services-boxs .item-box[data-v-232fbf22]:before{opacity:0!important}.services-boxs .item-box[data-v-232fbf22]:active,.services-boxs .item-box[data-v-232fbf22]:hover{transform:none!important}}";
-
-const NewServices2Styles_CSbZp5xu = [NewServices2_vue_vue_type_style_index_0_scoped_232fbf22_lang];
-
-export { NewServices2Styles_CSbZp5xu as default };
-//# sourceMappingURL=NewServices2-styles.CSbZp5xu.mjs.map

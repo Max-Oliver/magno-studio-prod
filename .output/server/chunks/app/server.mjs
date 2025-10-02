@@ -1,5 +1,5 @@
 import { version, unref, inject, defineComponent, provide, shallowReactive, h, ref, watch, Suspense, nextTick, Transition, useSSRContext, createApp, effectScope, reactive, hasInjectionContext, getCurrentInstance, computed, defineAsyncComponent, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, mergeProps } from 'vue';
-import { d as useRuntimeConfig$1, $ as $fetch, w as withQuery, l as hasProtocol, p as parseURL, m as isScriptProtocol, j as joinURL, h as createError$1, n as defu, o as sanitizeStatusCode, q as createHooks } from '../nitro/node-server.mjs';
+import { h as useRuntimeConfig$1, $ as $fetch, w as withQuery, m as hasProtocol, p as parseURL, n as isScriptProtocol, j as joinURL, c as createError$1, o as defu, q as sanitizeStatusCode, t as createHooks } from '../nitro/node-server.mjs';
 import { getActiveHead } from 'unhead';
 import { defineHeadPlugin } from '@unhead/shared';
 import { RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
@@ -629,7 +629,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/contact-DTfWqKXt.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/contact-D0YPVUd1.mjs').then((m) => m.default || m)
   },
   {
     name: "home-works",
@@ -637,7 +637,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/works-TND5y3EE.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/works-CqV1hDJd.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -645,7 +645,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_nuxt/index-DEtVj3YJ.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-BRVSCgtJ.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1104,18 +1104,15 @@ const messages = {
       address: "Address",
       social: "Social Media"
     },
-    ribbons: {
-      left: "BUILDING DIGITAL DESIGN",
-      right: "CREATIVE STUDIO"
-    },
     // en messages.en
     heroSlides: {
-      s1: { h2: "We Create", h1: "Awesome Design" },
-      // (corregí "Awoseme" -> Awesome)
-      s2: { h2: "We Create Impactful", h1: "Digital Experiences" },
-      s3: { h2: "Elevate your", h1: "Brand & Fuel Growth" },
-      prev: "Prev",
-      next: "Next"
+      s1: {
+        h2_static_prefix: "The creative studio",
+        h2_static_strong: "that powers your business",
+        parrafo_1: "We blend creativity & strategy so your business grows and stands out.",
+        parrafo_2: "Fast websites, smooth animations and 24/7 funnels.",
+        parrafo_3: "Your success is part of our story."
+      }
     },
     // EN
     intro: {
@@ -1310,41 +1307,19 @@ const messages = {
     },
     // en messages.es
     heroSlides: {
-      s1: { h2: "Creamos", h1: "Diseños Asombrosos" },
-      s2: { h2: "Creamos experiencias", h1: "Digitales con impacto" },
-      s3: { h2: "Elevá tu", h1: "Marca y acelera el crecimiento" },
-      prev: "Anterior",
-      next: "Siguiente"
+      s1: {
+        h2_static_prefix: "El estudio creativo",
+        h2_static_strong: "que potencia tu negocio",
+        parrafo_1: "Combinamos creatividad & estrategia para que tu negocio logre crecer y destacarse. Tu éxito es parte de nuestra historia."
+      }
     },
     // ES
     intro: {
-      headline_1: "Si buscás un especialista para construir un",
-      headline_2: "proyecto digital con sentido, podés",
-      headline_3: "contactarnos haciendo clic",
-      headline_cta: "aquí",
-      // years_label: 'Años de experiencia',
-      // years_amount: '3',
-      paragraph: "Ya seas una agencia de desarrollo que quiere tercerizar diseño, una empresa en busca de un Product Designer o un equipo de Producto, una agencia de marketing que necesita una landing, una startup que quiere lanzar una app o una compañía que planea rebranding o rediseño web, recibimos cada desafío con los brazos abiertos.",
-      marquee: [
-        "Diseño UI-UX",
-        "Desarrollo Web",
-        "Marketing Digital",
-        "Producto Digital",
-        "Branding"
-      ]
-    },
-    servicesIntro: {
-      watch: "Ver Intro",
-      why: "¿Por qué elegirnos?",
-      titleLines: ["La agencia creativa y", "moderna que necesitás."],
-      paragraph: "Diseñamos marcas, sitios web y productos digitales bellos, rápidos y con propósito.",
-      stats: {
-        projects_value: 7,
-        projects_label: ["Proyectos", "Completados"],
-        satisfaction_value: 10,
-        satisfaction_unit: "+",
-        satisfaction_label: ["Clientes", "Satisfechos"]
-      }
+      headline_1: "Diseñamos",
+      headline_2: "lo que tu marca necesita para crecer",
+      headline_cta: "Evaluá tu identidad en 15 min",
+      headline_micro: "Sin costo · Respondemos en 30 min",
+      paragraph: "Desde landings veloces, animaciones fluidas y funnels que trabajan 24/7, pasando por branding, apps y rediseños completos. Si sos una agencia, startup o empresa que quiere dar el próximo paso, en Magno Studio estamos listos para hacerlo realidad junto a vos"
     },
     services2: {
       eyebrow: "Así te ayudamos",
@@ -1352,8 +1327,8 @@ const messages = {
     },
     servicesTabs: {
       eyebrow: "¿Quiénes somos?",
-      title: "La guía definitiva para el éxito en marketing.",
-      intro: "Llevamos nuestros talentos a la frontera de la tecnología para generar impacto real. Así, vivimos en primera fila el futuro.",
+      title: "Un equipo creativo con visión integral y compromiso",
+      intro: "Cada servicio que ofrecemos está pensado para impulsar resultados reales. En Magno Studio trabajamos con estrategia, creatividad y compromiso, involucrandonos en cada proyecto como si fuera propio, apostando siempre a resultados que trascienden lo estético.",
       cta: "Ver más",
       tabs: [
         {
@@ -1361,28 +1336,28 @@ const messages = {
           label: "Sobre nosotros",
           img: "/dark/assets/imgs/about-us/about_us_image.png",
           icon: "/dark/assets/imgs/serv-icons/0.png",
-          text: "Somos un estudio creativo especializado en diseño, desarrollo y estrategia para construir experiencias digitales excepcionales."
+          text: "Somos un estudio creativo que combina diseño, desarrollo y estrategia para construir experiencias digitales con propósito. Creemos en trabajar con compromiso real, porque tu crecimiento también impulsa el nuestro."
         },
         {
           num: "02",
           label: "Nuestra misión",
-          img: "/dark/assets/imgs/intro/02.jpg",
+          img: "/dark/assets/imgs/about-us/about_us_image.png",
           icon: "/dark/assets/imgs/serv-icons/1.png",
-          text: "Trabajamos junto a marcas para crear productos útiles, bellos y rápidos que impulsen el negocio con resultados medibles."
+          text: "Potenciar marcas y negocios a través de soluciones digitales únicas. No diseñamos solo por estética ni desarrollamos por cumplir: lo hacemos para generar impacto real, diferenciación y resultados medibles."
         },
         {
           num: "03",
           label: "Nuestra visión",
-          img: "/dark/assets/imgs/intro/03.jpg",
+          img: "/dark/assets/imgs/about-us/about_us_image.png",
           icon: "/dark/assets/imgs/serv-icons/2.png",
-          text: "Diseño y tecnología en conjunto para crear soluciones memorables, accesibles y escalables que la gente ame usar."
+          text: "Ser un referente creativo en la región, reconocido por transformar ideas en proyectos digitales que inspiran, conectan y hacen crecer a las marcas con autenticidad y valor."
         },
         {
           num: "04",
           label: "Logros",
-          img: "/dark/assets/imgs/intro/03.jpg",
+          img: "/dark/assets/imgs/about-us/about_us_image.png",
           icon: "/dark/assets/imgs/serv-icons/0.png",
-          text: "Proyectos, reconocimientos y casos de éxito que reflejan nuestro compromiso con la calidad, el performance y el impacto de marca."
+          text: "Hemos colaborado con empresas de diversos rubros, desde startups hasta agencias consolidadas, llevando adelante proyectos de branding, desarrollo web y estrategias digitales que impulsaron su presencia y resultados. Cada logro refleja nuestra convicción: crecer junto a quienes confían en nosotros."
         }
       ]
     },
@@ -1390,35 +1365,35 @@ const messages = {
       eyebrow: "Nos especializamos en",
       title_a: "Qué",
       title_b: "Ofrecemos",
-      read_more: "Ver más",
+      read_more: "Consultas sin costo",
       list: [
         {
           titleA: "Branding",
           titleB: "& Identidad",
           img: "/dark/assets/imgs/serv-icons/5.png",
-          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
-          link: "/dark/page-services-details"
+          desc: "Construimos identidades sólidas y memorables que transmiten quién sos y qué te hace diferente.",
+          link: "/home/contact"
         },
         {
           titleA: "Diseño Gráfico",
-          titleB: "y Social Media",
+          titleB: "& Social Media",
           img: "/dark/assets/imgs/serv-icons/3.png",
-          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
-          link: "/dark/page-services-details"
+          desc: "Creamos contenido visual estratégico para que tu marca comunique con impacto en cada canal.",
+          link: "/home/contact"
         },
         {
           titleA: "Desarrollo",
           titleB: "de MVP",
           img: "/dark/assets/imgs/serv-icons/5.png",
-          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
-          link: "/dark/page-services-details"
+          desc: "Validamos tu idea con un producto mínimo funcional que te permite lanzarte al mercado rápido y con solidez.",
+          link: "/home/contact"
         },
         {
           titleA: "Desarrollo",
-          titleB: "Web",
+          titleB: "& Diseño Web",
           img: "/dark/assets/imgs/serv-icons/4.png",
-          desc: "Taller en vivo para definir problemas y oportunidades antes de construir un plan estratégico claro.",
-          link: "/dark/page-services-details"
+          desc: "Diseñamos y desarrollamos sitios web a medida, optimizados para cautivar, convertir y escalar.",
+          link: "/home/contact"
         }
       ]
     },
@@ -1460,7 +1435,7 @@ const messages = {
     },
     footer: {
       cta_subtitle: "Hablemos hoy",
-      cta_title: "Contáctenos",
+      cta_title: "De idea al producto con solo un mensaje",
       address_label: "Dirección",
       address_line1: "Miami Boulevard 2",
       address_line2: "Punta del Este, Uruguay",
@@ -1474,7 +1449,7 @@ const messages = {
     },
     social: {
       instagram: "Instagram",
-      behance: "Behance"
+      behance: "Facebook"
     },
     tab_works: {},
     tab_contact: {

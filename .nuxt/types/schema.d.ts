@@ -18,11 +18,13 @@ declare module 'nuxt/schema' {
    contactTo: string,
 
    contactFrom: string,
-  }
-  interface PublicRuntimeConfig {
+
    whatsappNumber: string,
 
    whatsappText: string,
+  }
+  interface PublicRuntimeConfig {
+
   }
 }
 declare module 'vue' {

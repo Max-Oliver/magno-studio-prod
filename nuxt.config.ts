@@ -12,10 +12,8 @@ export default defineNuxtConfig({
     resendApiKey: process.env.RESEND_API_KEY,
     contactTo:    process.env.CONTACT_TO,
     contactFrom:  process.env.CONTACT_FROM,
-    public: {
-      whatsappNumber: process.env.NUXT_PUBLIC_WHATSAPP_NUMBER || '+59891345926',
-      whatsappText: process.env.NUXT_PUBLIC_WHATSAPP_TEXT || '',
-    },
+    whatsappNumber: process.env.NUXT_PUBLIC_WHATSAPP_NUMBER || '',
+    whatsappText: process.env.NUXT_PUBLIC_WHATSAPP_TEXT || '',
 
   },
   nitro: {},
@@ -84,18 +82,18 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/png',
-          href: '/favicon-32x32.png',
+          href: '/favicon.ico',
           sizes: '32x32',
         },
         {
           rel: 'icon',
           type: 'image/png',
-          href: '/favicon-16x16.png',
+          href: '/favicon.ico',
           sizes: '16x16',
         },
         {
           rel: 'apple-touch-icon',
-          href: '/apple-touch-icon.png',
+          href: '/favicon.ico',
           sizes: '180x180',
         },
         { rel: 'shortcut icon', href: '/dark/assets/imgs/favicon.ico' },
