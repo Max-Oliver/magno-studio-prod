@@ -123,7 +123,6 @@
 </template>
 
 <script setup>
-import data from '@/data/portfolios/worksfull.json';
 import loadBackgroudImages from '@/common/loadBackgroudImages';
 import { ref, onMounted, watch } from 'vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';

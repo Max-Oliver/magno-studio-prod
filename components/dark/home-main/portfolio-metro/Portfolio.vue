@@ -7,7 +7,10 @@
         <div class="col-lg-8 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/beru/beru.jpg" alt="" />
+              <img v-responsive-img
+                data-src-desktop="/dark/assets/imgs/portfolio-slider/beru/Desk/Beru_Magno_Studio.png"
+                data-src-mobile="/dark/assets/imgs/portfolio-slider/beru/Mobile/Beru_Magno_Mobile.png"
+                alt="Diseño de Branding y Identidad Visual" loading="lazy" decoding="async" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -22,7 +25,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/beru/beru-post-1.jpg" alt="" />
+              <img src="/dark/assets/imgs/portfolio-slider/beru/Mobile/1.jpg" alt="" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -37,7 +40,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="item mt-140">
             <div class="img">
-              <img src="/dark/assets/imgs/portfolio-slider/beru/beru-post-2.jpg" alt="" />
+              <img src="/dark/assets/imgs/portfolio-slider/beru/Mobile/2.jpg" alt="" />
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -53,6 +56,7 @@
           <div class="item mt-140">
             <div class="img">
               <img src="/dark/assets/imgs/portfolio-slider/beru/beru-web.jpg" alt="" />
+
             </div>
             <div class="cont d-flex align-items-center mt-20">
               <h5 class="fz-22">
@@ -288,13 +292,18 @@
 </template>
 
 
-<script setup lang="ts">
+<script setup>
 import { useI18n } from '@/i18n';
 import responsiveImg from '@/common/loadResponsiveImage';
-const vResponsiveImg = responsiveImg; // registrar local
+import loadBackgroudImages from '@/common/loadBackgroudImages';
+import { ref, onMounted, watch } from 'vue';
 
+const vResponsiveImg = responsiveImg; // registrar local
 const { t } = useI18n();
 
+onMounted(() => {
+  loadBackgroudImages();
+});
 </script>
 
 <style scoped>
